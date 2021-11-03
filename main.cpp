@@ -47,6 +47,16 @@ int main(int argc, char *argv[])
     MainDesktopWeaDTWindow w;
 
     //
+    QList<QByteArray> listOfAllIANATimezones = w.getAllTimezonesQList();
+
+    //
+    for(int i = 0; i < listOfAllIANATimezones.count(); i++) {
+
+        //
+        qDebug() << QString(listOfAllIANATimezones[i]) << "\n";
+    }
+
+    //
     w.show();
 
     //
