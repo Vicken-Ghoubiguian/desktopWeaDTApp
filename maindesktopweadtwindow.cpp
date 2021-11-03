@@ -21,3 +21,9 @@ MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
     delete ui;
 }
 
+//
+QList<QByteArray> MainDesktopWeaDTWindow::getAllTimezonesQList()
+{
+    return this->allTimezonesQList;
+}
+

@@ -16,7 +16,12 @@ public:
 
     //
     MainDesktopWeaDTWindow(QWidget *parent = nullptr);
+
+    //
     ~MainDesktopWeaDTWindow();
+
+    //
+    QList<QByteArray> getAllTimezonesQList();
 
 private:
 
