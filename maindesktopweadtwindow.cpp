@@ -13,6 +13,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allTimezonesQList = this->getAllIANATimezones();
 
     //
+    //ui->comboBoxOfIANATimezones->addItems(QStringList(this->allTimezonesQList));
+
+    //
     ui->setupUi(this);
 }
 
