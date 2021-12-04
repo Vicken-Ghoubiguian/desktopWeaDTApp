@@ -70,3 +70,9 @@ QList<QString> MainDesktopWeaDTWindow::getAllIANATimezones()
     return listOfAllIANATimezonesQListQString;
 }
 
+//
+QString MainDesktopWeaDTWindow::getCurrentTimezone()
+{
+    return "";
+}
+
