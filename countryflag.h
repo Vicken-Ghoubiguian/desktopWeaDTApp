@@ -8,7 +8,7 @@ class countryFlag : public QObject
     Q_OBJECT
 
 public:
-    explicit countryFlag(QObject *parent = nullptr);
+    explicit countryFlag(QString countryCode, QObject *parent = nullptr);
     QString getFlagURL();
     QString getCountryCode();
     QString getCountryName();
