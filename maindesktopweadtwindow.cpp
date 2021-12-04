@@ -27,13 +27,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
         //
         if(currentTimeZoneAsStringList.contains("Africa") || currentTimeZoneAsStringList.contains("America") || currentTimeZoneAsStringList.contains("Asia") || currentTimeZoneAsStringList.contains("Atlantic") || currentTimeZoneAsStringList.contains("Australia") || currentTimeZoneAsStringList.contains("Europe") || currentTimeZoneAsStringList.contains("Indian") || currentTimeZoneAsStringList.contains("Pacific")) {
 
-            //this->allTimezonesQList = QTimeZone::availableTimeZoneIds();
+            //
             this->allTimezonesQList.append(currentTimeZoneAsString);
         }
     }
-
-    //
-    //this->allTimezonesQList = QTimeZone::availableTimeZoneIds();
 
     //
     ui->setupUi(this);
