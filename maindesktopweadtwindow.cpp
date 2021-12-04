@@ -5,6 +5,7 @@
 //
 #include <QTimeZone>
 
+//
 MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
@@ -19,6 +20,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
 }
 
+//
 MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
 {
     delete ui;
