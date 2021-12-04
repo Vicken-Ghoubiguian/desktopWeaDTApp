@@ -14,18 +14,18 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allTimezonesQList = this->getAllIANATimezones();
 
     //
+    //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
+
+    //
     ui->setupUi(this);
 
     //
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
 
-    //
-    //
-
-    QPixmap pm("https://flagcdn.com/16x12/za.png");
+    //QPixmap pm("https://flagcdn.com/16x12/za.png");
 
     //
-    ui->flagDisplayer->setPixmap(pm);
+    //ui->flagDisplayer->setPixmap(pm);
 
     //
     ui->flagDisplayer->setScaledContents(true);
