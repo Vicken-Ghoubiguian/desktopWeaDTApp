@@ -22,6 +22,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
 
+    //
     //QPixmap pm("https://flagcdn.com/16x12/za.png");
 
     //
