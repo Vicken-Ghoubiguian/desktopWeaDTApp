@@ -33,5 +33,8 @@ private:
 
     //
     QList<QString> getAllIANATimezones();
+
+    //
+    QString getCurrentTimezone();
 };
 #endif // MAINDESKTOPWEADTWINDOW_H
