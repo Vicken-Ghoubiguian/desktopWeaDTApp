@@ -10,6 +10,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
 {
     //
+    this->allTimezonesQList = QList<QString>();
+
+    //
     QList<QByteArray> listOfAllIANATimezones = QTimeZone::availableTimeZoneIds();
 
     //
@@ -24,7 +27,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
         //
         if(currentTimeZoneAsStringList.contains("Africa") || currentTimeZoneAsStringList.contains("America") || currentTimeZoneAsStringList.contains("Asia") || currentTimeZoneAsStringList.contains("Atlantic") || currentTimeZoneAsStringList.contains("Australia") || currentTimeZoneAsStringList.contains("Europe") || currentTimeZoneAsStringList.contains("Indian") || currentTimeZoneAsStringList.contains("Pacific")) {
 
-            this->allTimezonesQList = QTimeZone::availableTimeZoneIds();
+            //this->allTimezonesQList = QTimeZone::availableTimeZoneIds();
+            this->allTimezonesQList.append(currentTimeZoneAsString);
         }
     }
 
@@ -41,7 +45,7 @@ MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
 }
 
 //
-QList<QByteArray> MainDesktopWeaDTWindow::getAllTimezonesQList()
+QList<QString> MainDesktopWeaDTWindow::getAllTimezonesQList()
 {
     return this->allTimezonesQList;
 }

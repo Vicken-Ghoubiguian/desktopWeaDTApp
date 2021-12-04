@@ -21,7 +21,7 @@ public:
     ~MainDesktopWeaDTWindow();
 
     //
-    QList<QByteArray> getAllTimezonesQList();
+    QList<QString> getAllTimezonesQList();
 
 private:
 
@@ -29,6 +29,9 @@ private:
     Ui::MainDesktopWeaDTWindow *ui;
 
     //
-    QList<QByteArray> allTimezonesQList;
+    QList<QString> allTimezonesQList;
+
+    //
+    QList<QString> getAllIANATimezones();
 };
 #endif // MAINDESKTOPWEADTWINDOW_H

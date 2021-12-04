@@ -47,13 +47,13 @@ int main(int argc, char *argv[])
     MainDesktopWeaDTWindow w;
 
     //
-    QList<QByteArray> listOfAllIANATimezones = w.getAllTimezonesQList();
+    QList<QString> listOfAllIANATimezones = w.getAllTimezonesQList();
 
     //
     for(int i = 0; i < listOfAllIANATimezones.count(); i++) {
 
         //
-        qDebug() << QString(listOfAllIANATimezones[i]) << "\n";
+        qDebug() << listOfAllIANATimezones[i] << "\n";
     }
 
     //
