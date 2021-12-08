@@ -22,8 +22,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
-    qDebug() << this->getDateTimeForSpecificTimeZone();
-
     //
     //QPixmap pm("https://flagcdn.com/16x12/za.png");
 
@@ -96,12 +94,6 @@ qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
     //
     QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
 
-    qDebug() << currentQTimeZone;
-
-    qDebug() << QDateTime::currentDateTime();
-
-    qDebug() << currentQTimeZone.daylightTimeOffset(QDateTime::currentDateTime());
-
     //
-    return QDateTime::currentMSecsSinceEpoch() + currentQTimeZone.daylightTimeOffset(QDateTime::currentDateTime());
+    return QDateTime::currentMSecsSinceEpoch() + currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
 }
