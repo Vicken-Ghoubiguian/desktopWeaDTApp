@@ -37,5 +37,8 @@ private:
 
     //
     QString getSystemIANATimezone();
+
+    //
+    int getIANATimezoneIndex(QString ianaTimeZone);
 };
 #endif // MAINDESKTOPWEADTWINDOW_H

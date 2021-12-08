@@ -81,3 +81,10 @@ QString MainDesktopWeaDTWindow::getSystemIANATimezone()
     return QString(QTimeZone::systemTimeZone().id());
 }
 
+//
+int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
+{
+    //
+    return 0;
+}
+
