@@ -4,7 +4,6 @@
 //
 #include <QApplication>
 #include <QLocale>
-#include <QTimeZone>
 
 //
 int main(int argc, char *argv[])
@@ -14,8 +13,6 @@ int main(int argc, char *argv[])
 
     //
     MainDesktopWeaDTWindow w;
-
-    qDebug() << QTimeZone::systemTimeZone() << QTimeZone::systemTimeZone().country() << QString(QTimeZone::systemTimeZone().id());
 
     //
     w.show();
