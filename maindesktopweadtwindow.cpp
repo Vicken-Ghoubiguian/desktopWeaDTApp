@@ -72,8 +72,9 @@ QList<QString> MainDesktopWeaDTWindow::getAllIANATimezones()
 }
 
 //
-QString MainDesktopWeaDTWindow::getCurrentTimezone()
+QString MainDesktopWeaDTWindow::getSystemIANATimezone()
 {
-    return "";
+    //
+    return QString(QTimeZone::systemTimeZone().id());
 }
 
