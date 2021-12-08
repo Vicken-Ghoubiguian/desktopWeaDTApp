@@ -2,6 +2,7 @@
 #define MAINDESKTOPWEADTWINDOW_H
 
 #include <QMainWindow>
+#include <QDateTime>
 #include <QTimeZone>
 
 QT_BEGIN_NAMESPACE
@@ -40,5 +41,8 @@ private:
 
     //
     int getIANATimezoneIndex(QString ianaTimeZone);
+
+    //
+    qint64 getDateTimeForSpecificTimeZone();
 };
 #endif // MAINDESKTOPWEADTWINDOW_H
