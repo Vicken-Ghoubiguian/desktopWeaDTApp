@@ -2,6 +2,7 @@
 #define MAINDESKTOPWEADTWINDOW_H
 
 #include <QMainWindow>
+#include <QTimeZone>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
