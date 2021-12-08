@@ -94,5 +94,8 @@ int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
 {
     //
-    return 0;
+    QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
+
+    //
+    return QDateTime::currentMSecsSinceEpoch() - currentQTimeZone.daylightTimeOffset(QDateTime::currentDateTime());
 }
