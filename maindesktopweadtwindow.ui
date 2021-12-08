@@ -83,6 +83,24 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menutest">
+    <property name="title">
+     <string>What time is it ?</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menutest_2">
+    <property name="title">
+     <string>test</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuemojis">
+    <property name="title">
+     <string>emojis</string>
+    </property>
+   </widget>
+   <addaction name="menutest"/>
+   <addaction name="menutest_2"/>
+   <addaction name="menuemojis"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
