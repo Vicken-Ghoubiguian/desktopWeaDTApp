@@ -20,7 +20,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
 
     //
-    ui->comboBoxOfIANATimezones->setCurrentIndex(10);
+    ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
     //
     //QPixmap pm("https://flagcdn.com/16x12/za.png");
@@ -85,6 +85,6 @@ QString MainDesktopWeaDTWindow::getSystemIANATimezone()
 int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 {
     //
-    return 0;
+    return this->allTimezonesQList.indexOf(ianaTimeZone);
 }
 
