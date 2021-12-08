@@ -96,6 +96,12 @@ qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
     //
     QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
 
+    qDebug() << currentQTimeZone;
+
+    qDebug() << QDateTime::currentDateTime();
+
+    qDebug() << currentQTimeZone.daylightTimeOffset(QDateTime::currentDateTime());
+
     //
     return QDateTime::currentMSecsSinceEpoch() + currentQTimeZone.daylightTimeOffset(QDateTime::currentDateTime());
 }
