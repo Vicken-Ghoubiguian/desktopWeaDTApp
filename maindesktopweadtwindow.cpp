@@ -30,6 +30,11 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     //
     ui->flagDisplayer->setScaledContents(true);
+
+    qDebug() << this->getDateTimeForSpecificTimeZone() << " yyyy " << static_cast<int>(this->getDateTimeForSpecificTimeZone());
+
+    //
+    ui->lcdNumber->display(static_cast<int>(this->getDateTimeForSpecificTimeZone()));
 }
 
 //
