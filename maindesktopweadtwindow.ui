@@ -27,20 +27,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="weatherDisplayer">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>90</y>
-      <width>241</width>
-      <height>181</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QTabWidget" name="tabWidgetOfInterface">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -49,15 +36,18 @@
       <height>581</height>
      </rect>
     </property>
-    <widget class="QWidget" name="tab">
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>Date and time</string>
      </attribute>
      <widget class="QLabel" name="labelOfIANATimezones">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>20</y>
+        <x>130</x>
+        <y>80</y>
         <width>191</width>
         <height>16</height>
        </rect>
@@ -69,8 +59,8 @@
      <widget class="QComboBox" name="comboBoxOfIANATimezones">
       <property name="geometry">
        <rect>
-        <x>300</x>
-        <y>20</y>
+        <x>320</x>
+        <y>80</y>
         <width>321</width>
         <height>21</height>
        </rect>
@@ -80,27 +70,27 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>50</y>
+        <y>190</y>
         <width>771</width>
         <height>211</height>
        </rect>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="weatherTab">
+     <attribute name="title">
+      <string>Weather</string>
+     </attribute>
      <widget class="QTextBrowser" name="weatherTextDisplay">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>270</y>
+        <y>250</y>
         <width>781</width>
         <height>251</height>
        </rect>
       </property>
      </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
     </widget>
    </widget>
   </widget>
