@@ -73,34 +73,36 @@
      <string/>
     </property>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menubar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>800</width>
-     <height>26</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menutest">
-    <property name="title">
-     <string>What time is it ?</string>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>771</width>
+      <height>211</height>
+     </rect>
     </property>
    </widget>
-   <widget class="QMenu" name="menutest_2">
-    <property name="title">
-     <string>test</string>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>135</width>
+      <height>80</height>
+     </rect>
     </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
    </widget>
-   <widget class="QMenu" name="menuemojis">
-    <property name="title">
-     <string>emojis</string>
-    </property>
-   </widget>
-   <addaction name="menutest"/>
-   <addaction name="menutest_2"/>
-   <addaction name="menuemojis"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
