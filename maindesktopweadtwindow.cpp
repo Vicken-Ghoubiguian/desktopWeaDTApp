@@ -29,7 +29,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //ui->flagDisplayer->setPixmap(pm);
 
     //
-    ui->flagDisplayer->setScaledContents(true);
+    //ui->flagDisplayer->setScaledContents(true);
 
     qDebug() << this->getDateTimeForSpecificTimeZone();
 
