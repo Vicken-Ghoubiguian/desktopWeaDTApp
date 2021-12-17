@@ -14,15 +14,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
 
     //
-    ui->setupUi(this);
-
-    //
-    ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
-
-    //
-    ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
-
-    //
     //QPixmap pm("https://flagcdn.com/16x12/za.png");
 
     //
@@ -30,6 +21,15 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     //
     //ui->flagDisplayer->setScaledContents(true);
+
+    //
+    ui->setupUi(this);
+
+    //
+    ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
+
+    //
+    ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
     qDebug() << this->getDateTimeForSpecificTimeZone();
 
