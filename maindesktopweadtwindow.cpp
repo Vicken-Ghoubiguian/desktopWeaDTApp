@@ -25,16 +25,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->setupUi(this);
 
-    //
+    // Definition and implementation of IANA timezones comboBox and of the date and time displayer...
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
-
-    //
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
-
-    //
     this->updateDisplayedTimeForSpecificTimeZone();
 
-    //
+    // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
 }
 
