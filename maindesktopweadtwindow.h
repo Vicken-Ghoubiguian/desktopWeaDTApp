@@ -25,6 +25,11 @@ public:
     //
     QList<QString> getAllTimezonesQList();
 
+private slots:
+
+    //
+    void updateDisplayedTimeForSpecificTimeZone();
+
 private:
 
     //
@@ -41,9 +46,6 @@ private:
 
     //
     int getIANATimezoneIndex(QString ianaTimeZone);
-
-    //
-    void updateDisplayedTimeForSpecificTimeZone();
 
     //
     qint64 getDateTimeForSpecificTimeZone();

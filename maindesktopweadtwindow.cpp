@@ -33,6 +33,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     //
     this->updateDisplayedTimeForSpecificTimeZone();
+
+    //
+    connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
 }
 
 //
