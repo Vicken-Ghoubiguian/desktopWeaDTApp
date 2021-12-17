@@ -37,12 +37,14 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 //
 MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
 {
+    //
     delete ui;
 }
 
 //
 QList<QString> MainDesktopWeaDTWindow::getAllTimezonesQList()
 {
+    //
     return this->allTimezonesQList;
 }
 
@@ -95,6 +97,8 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 {
     //
     qDebug() << this->getDateTimeForSpecificTimeZone();
+
+    ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
 }
 
 //
