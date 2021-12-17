@@ -43,6 +43,9 @@ private:
     int getIANATimezoneIndex(QString ianaTimeZone);
 
     //
+    void updateDisplayedTimeForSpecificTimeZone();
+
+    //
     qint64 getDateTimeForSpecificTimeZone();
 };
 #endif // MAINDESKTOPWEADTWINDOW_H

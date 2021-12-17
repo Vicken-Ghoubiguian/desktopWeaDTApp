@@ -31,10 +31,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
-    qDebug() << this->getDateTimeForSpecificTimeZone();
-
     //
-    ui->lcdNumber->display(static_cast<int>(this->getDateTimeForSpecificTimeZone()));
+    this->updateDisplayedTimeForSpecificTimeZone();
 }
 
 //
@@ -91,6 +89,13 @@ int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 {
     //
     return this->allTimezonesQList.indexOf(ianaTimeZone);
+}
+
+//
+void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
+{
+    //
+    qDebug() << this->getDateTimeForSpecificTimeZone();
 }
 
 //
