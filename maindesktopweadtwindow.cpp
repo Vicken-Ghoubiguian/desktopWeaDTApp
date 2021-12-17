@@ -7,10 +7,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
 {
-    //
-    this->allTimezonesQList = this->getAllIANATimezones(); //
+    // Definition and implementation of IANA timezones QList<QString>...
+    this->allTimezonesQList = this->getAllIANATimezones();
 
-    //
+    // Definition and implementation of date and time formats QList<QString>...
     this->allDateTimeFormatsQList.append("timestamp");
     this->allDateTimeFormatsQList.append("dd.MM.yyyy");
     this->allDateTimeFormatsQList.append("ddd MMMM d yy");
