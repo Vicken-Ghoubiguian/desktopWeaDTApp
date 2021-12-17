@@ -50,7 +50,7 @@ private:
     //
     int getIANATimezoneIndex(QString ianaTimeZone);
 
-    //
+    // 'getDateTimeForSpecificTimeZone' function to return the current date and time from the current timezone...
     qint64 getDateTimeForSpecificTimeZone();
 };
 #endif // MAINDESKTOPWEADTWINDOW_H
