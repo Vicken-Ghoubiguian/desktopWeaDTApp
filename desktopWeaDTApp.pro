@@ -11,11 +11,13 @@ DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs depr
 SOURCES += \
     countryflag.cpp \
     main.cpp \
-    maindesktopweadtwindow.cpp
+    maindesktopweadtwindow.cpp \
+    weather.cpp
 
 HEADERS += \
     countryflag.h \
-    maindesktopweadtwindow.h
+    maindesktopweadtwindow.h \
+    weather.h
 
 FORMS += \
     maindesktopweadtwindow.ui
