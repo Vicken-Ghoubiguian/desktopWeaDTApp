@@ -108,7 +108,24 @@ int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 {
     //
-    qDebug() << this->getDateTimeForSpecificTimeZone();
+    if(ui->comboBoxDateAndTimeFormats->currentText() == "timestamp")
+    {
+
+        //
+        qDebug() << this->getDateTimeForSpecificTimeZone();
+
+    //
+    } else {
+
+        //
+        QDateTime qdateTimeForSpecificTimeZone;
+
+        //
+        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(this->getDateTimeForSpecificTimeZone());
+
+        //
+        qDebug() << qdateTimeForSpecificTimeZone.toString(ui->comboBoxDateAndTimeFormats->currentText());
+    }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
 }
