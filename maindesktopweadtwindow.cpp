@@ -33,14 +33,14 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->setupUi(this);
 
+    //
+    ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
+    ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
+
     // Definition and implementation of IANA timezones comboBox and of the date and time displayer...
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
-
-    //
-    ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
-    ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
 
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
@@ -137,5 +137,5 @@ qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
     QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
 
     //
-    return QDateTime::currentMSecsSinceEpoch() + currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
+    return QDateTime::currentSecsSinceEpoch() + currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
 }
