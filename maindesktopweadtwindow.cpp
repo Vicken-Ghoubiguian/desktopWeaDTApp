@@ -8,7 +8,15 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
 {
     //
-    this->allTimezonesQList = this->getAllIANATimezones();
+    this->allTimezonesQList = this->getAllIANATimezones(); //
+
+    //
+    this->allDateTimeFormatsQList.append("timestamp");
+    this->allDateTimeFormatsQList.append("dd.MM.yyyy");
+    this->allDateTimeFormatsQList.append("ddd MMMM d yy");
+    this->allDateTimeFormatsQList.append("hh:mm:ss.zzz");
+    this->allDateTimeFormatsQList.append("hh:mm:ss.z");
+    this->allDateTimeFormatsQList.append("h:m:s ap");
 
     //
     //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
@@ -29,6 +37,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
+
+    //
+    ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
+    ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
 
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
@@ -98,7 +110,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     //
     qDebug() << this->getDateTimeForSpecificTimeZone();
 
-    ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
+    //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
 }
 
 //

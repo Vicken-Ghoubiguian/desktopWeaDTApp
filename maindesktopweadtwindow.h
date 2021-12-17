@@ -23,7 +23,7 @@ public:
     ~MainDesktopWeaDTWindow();
 
     //
-    QList<QString> getAllTimezonesQList();
+    QList<QString> getAllTimezonesQList(); 
 
 private slots:
 
@@ -37,6 +37,9 @@ private:
 
     //
     QList<QString> allTimezonesQList;
+
+    //
+    QList<QString> allDateTimeFormatsQList;
 
     //
     QList<QString> getAllIANATimezones();
