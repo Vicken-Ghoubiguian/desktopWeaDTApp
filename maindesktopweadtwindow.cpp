@@ -12,11 +12,20 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     // Definition and implementation of date and time formats QList<QString>...
     this->allDateTimeFormatsQList.append("timestamp");
+    this->allDateTimeFormatsQList.append("dddd dd MM yyyy");
+    this->allDateTimeFormatsQList.append("ddd dd MM yyyy");
+    this->allDateTimeFormatsQList.append("dd/MM/yyyy");
     this->allDateTimeFormatsQList.append("dddd dd MM yyyy hh:mm:ss");
+    this->allDateTimeFormatsQList.append("dddd dd MM yyyy hh:mm:ss ap");
+    this->allDateTimeFormatsQList.append("ddd dd MM yyyy hh:mm:ss");
+    this->allDateTimeFormatsQList.append("ddd dd MM yyyy hh:mm:ss ap");
+    this->allDateTimeFormatsQList.append("dd/MM/yyyy hh:mm:ss");
+    this->allDateTimeFormatsQList.append("dd/MM/yyyy hh:mm:ss ap");
+
     this->allDateTimeFormatsQList.append("ddd MMMM d yy");
     this->allDateTimeFormatsQList.append("hh:mm:ss.zzz");
-    this->allDateTimeFormatsQList.append("hh:mm:ss.z");
-    this->allDateTimeFormatsQList.append("h:m:s ap");
+    this->allDateTimeFormatsQList.append("hh:mm:ss");
+    this->allDateTimeFormatsQList.append("hh:mm:ss ap");
 
     // Setup the graphical interface of this application...
     ui->setupUi(this);
