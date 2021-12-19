@@ -21,11 +21,11 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     // Setup the graphical interface of this application...
     ui->setupUi(this);
 
-    //
+    // Definition and implementation of date and time formats comboBox and the current date and time format as index...
     ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
     ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
 
-    // Definition and implementation of IANA timezones comboBox and of the date and time displayer...
+    // Definition and implementation of IANA timezones comboBox, the current timezone and the first implementation of the date and time displayer's function...
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
