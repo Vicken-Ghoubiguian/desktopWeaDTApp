@@ -125,7 +125,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 
         qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
 
-        QDateTime localDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone("Asia/Seoul"));
+        QDateTime localDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8()));
 
         qDebug() << localDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
 
