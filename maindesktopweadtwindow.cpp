@@ -120,7 +120,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     {
 
         //
-        qDebug() << this->getDateTimeForSpecificTimeZone();
+        qDebug() << "PPPP: " << this->getDateTimeForSpecificTimeZone();
 
     //
     } else {
@@ -132,7 +132,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
         qdateTimeForSpecificTimeZone.setSecsSinceEpoch(this->getDateTimeForSpecificTimeZone());
 
         //
-        qDebug() << qdateTimeForSpecificTimeZone.toString(ui->comboBoxDateAndTimeFormats->currentText());
+        qDebug() << "PPPP: " << qdateTimeForSpecificTimeZone.toString(ui->comboBoxDateAndTimeFormats->currentText());
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
