@@ -110,43 +110,25 @@ int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 {
     //
+    QDateTime qdateTimeForSpecificTimeZone;
+
+    //
+    qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
+
+    //
+    QDateTime currentTimeZoneDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8()));
+
+    //
     if(ui->comboBoxDateAndTimeFormats->currentText() == "timestamp")
     {
-
         //
-        //qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << this->getDateTimeForSpecificTimeZone();
-
-        //this->getDateTimeForSpecificTimeZone();
+        qDebug() << currentTimeZoneDateTime.toSecsSinceEpoch();
 
     //
     } else {
 
-        QDateTime qdateTimeForSpecificTimeZone;
-
-        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
-
-        QDateTime localDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8()));
-
-        qDebug() << localDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
-
         //
-        /*QDateTime qdateTimeForSpecificTimeZone;
-
-        //
-        QTimeZone currentTimeZone("Asia/Seoul");
-
-        //
-        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
-
-        //qdateTimeForSpecificTimeZone.setTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
-        qdateTimeForSpecificTimeZone.setTimeZone(currentTimeZone);
-
-        this->getDateTimeForSpecificTimeZone();
-
-        //
-        qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << qdateTimeForSpecificTimeZone.toString(ui->comboBoxDateAndTimeFormats->currentText());
-
-        qDebug() << qdateTimeForSpecificTimeZone.timeZone();*/
+        qDebug() << currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
