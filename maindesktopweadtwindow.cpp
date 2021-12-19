@@ -2,7 +2,7 @@
 #include "maindesktopweadtwindow.h"
 #include "ui_maindesktopweadtwindow.h"
 
-//
+// Definition of the 'MainDesktopWeaDTWindow' class constructor...
 MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
@@ -54,10 +54,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
 }
 
-//
+// Definition of the 'MainDesktopWeaDTWindow' class destructor...
 MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
 {
-    //
+    // Deleting the application's graphical interface...
     delete ui;
 }
 

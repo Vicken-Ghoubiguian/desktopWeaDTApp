@@ -17,10 +17,10 @@ class MainDesktopWeaDTWindow : public QMainWindow
 
 public:
 
-    //
+    // Definition of the 'MainDesktopWeaDTWindow' class constructor...
     MainDesktopWeaDTWindow(QWidget *parent = nullptr);
 
-    //
+    // Definition of the 'MainDesktopWeaDTWindow' class destructor...
     ~MainDesktopWeaDTWindow();
 
     //
