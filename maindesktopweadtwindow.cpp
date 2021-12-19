@@ -30,7 +30,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     //ui->flagDisplayer->setScaledContents(true);
 
-    //
+    // Setup the graphical interface of this application...
     ui->setupUi(this);
 
     //
@@ -42,10 +42,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
 
-    //
+    // Definition of the date and time timer to follow current time...
     this->dateTimeTimer = new QTimer(this);
 
-    //
+    // Starting the date and time timer with a 1 second interval (1000 miliseconds)...
     this->dateTimeTimer->start(1000);
 
     // Definition of all 'connects' functions used in this class...
