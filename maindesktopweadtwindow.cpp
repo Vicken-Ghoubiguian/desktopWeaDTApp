@@ -39,8 +39,13 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->updateDisplayedTimeForSpecificTimeZone();
 
     //
-    /*this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
-    QPixmap pm("https://flagcdn.com/16x12/za.png");
+    this->setWindowTitle("L'app which déchire vraiment ta life !!!!");
+
+    //
+    //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
+
+    //
+    /*QPixmap pm("https://flagcdn.com/16x12/za.png");
     ui->flagDisplayer->setPixmap(pm);
     ui->flagDisplayer->setScaledContents(true);*/
 
