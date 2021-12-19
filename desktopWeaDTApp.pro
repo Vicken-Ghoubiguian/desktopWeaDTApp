@@ -31,3 +31,6 @@ HEADERS += \
 
 FORMS += \
     maindesktopweadtwindow.ui
+
+RESOURCES += \
+    ressources.qrc
