@@ -53,8 +53,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->flagDisplayer->setScaledContents(true);*/
 
     //
-    this->ui->comboBoxOfIANATimezones->setStyleSheet("background-color: blue; color: white; border-radius: 10px;");
-    this->ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: blue; color: white; border-radius: 10px;");
+    this->ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+    this->ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
     //
     this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
