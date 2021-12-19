@@ -37,7 +37,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
@@ -140,6 +140,11 @@
        <string>reset</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="emojisTab">
+     <attribute name="title">
+      <string>Emojis</string>
+     </attribute>
     </widget>
    </widget>
   </widget>
