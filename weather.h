@@ -6,10 +6,16 @@
 class Weather : public QObject
 {
     Q_OBJECT
+
 public:
+
+    //
     explicit Weather(QObject *parent = nullptr);
 
-signals:
+private:
+
+    //
+
 
 };
 
