@@ -42,7 +42,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->setWindowTitle("L'app which déchire vraiment ta life !!!!");
 
     //
-    //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
+    this->setFixedSize(820, 600);
+
+    //
+    //this->setWindowIcon(QIcon("ressources/img/cybcity.png"));
 
     //
     /*QPixmap pm("https://flagcdn.com/16x12/za.png");
