@@ -114,19 +114,39 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     {
 
         //
-        qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << this->getDateTimeForSpecificTimeZone();
+        //qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << this->getDateTimeForSpecificTimeZone();
+
+        this->getDateTimeForSpecificTimeZone();
 
     //
     } else {
 
-        //
         QDateTime qdateTimeForSpecificTimeZone;
 
+        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
+
+        QDateTime localDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone("Asia/Seoul"));
+
+        qDebug() << localDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
+
         //
-        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(this->getDateTimeForSpecificTimeZone());
+        /*QDateTime qdateTimeForSpecificTimeZone;
+
+        //
+        QTimeZone currentTimeZone("Asia/Seoul");
+
+        //
+        qdateTimeForSpecificTimeZone.setSecsSinceEpoch(QDateTime::currentSecsSinceEpoch());
+
+        //qdateTimeForSpecificTimeZone.setTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
+        qdateTimeForSpecificTimeZone.setTimeZone(currentTimeZone);
+
+        this->getDateTimeForSpecificTimeZone();
 
         //
         qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << qdateTimeForSpecificTimeZone.toString(ui->comboBoxDateAndTimeFormats->currentText());
+
+        qDebug() << qdateTimeForSpecificTimeZone.timeZone();*/
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
@@ -137,6 +157,8 @@ qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
 {
     // Definition of the 'currentQTimeZone' QTimeZone object from the current timezone...
     QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
+
+    qDebug() << QDateTime::currentSecsSinceEpoch() << " ... " << currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
 
     // Returning the current date and time of the current timezone, from the sum of the UTC timestamp with the timezone's offset from UTC as number of seconds, as a timestamp...
     return QDateTime::currentSecsSinceEpoch() + currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
