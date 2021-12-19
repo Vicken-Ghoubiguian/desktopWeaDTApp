@@ -18,18 +18,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allDateTimeFormatsQList.append("hh:mm:ss.z");
     this->allDateTimeFormatsQList.append("h:m:s ap");
 
-    //
-    //this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
-
-    //
-    //QPixmap pm("https://flagcdn.com/16x12/za.png");
-
-    //
-    //ui->flagDisplayer->setPixmap(pm);
-
-    //
-    //ui->flagDisplayer->setScaledContents(true);
-
     // Setup the graphical interface of this application...
     ui->setupUi(this);
 
@@ -41,6 +29,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
+
+    //
+    /*this->setWindowIcon(QIcon("https://flagcdn.com/16x12/za.png"));
+    QPixmap pm("https://flagcdn.com/16x12/za.png");
+    ui->flagDisplayer->setPixmap(pm);
+    ui->flagDisplayer->setScaledContents(true);*/
 
     // Definition of the date and time timer to follow current time...
     this->dateTimeTimer = new QTimer(this);
