@@ -11,7 +11,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allTimezonesQList = this->getAllIANATimezones();
 
     // Definition and implementation of date and time formats QList<QString>...
-    this->allDateTimeFormatsQList.append("timestamp");
+    this->allDateTimeFormatsQList.append("ISO Date");
     this->allDateTimeFormatsQList.append("dddd dd MM yyyy");
     this->allDateTimeFormatsQList.append("ddd dd MM yyyy");
     this->allDateTimeFormatsQList.append("dd/MM/yyyy");
@@ -127,10 +127,10 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     QDateTime currentTimeZoneDateTime = qdateTimeForSpecificTimeZone.toTimeZone(QTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8()));
 
     //
-    if(ui->comboBoxDateAndTimeFormats->currentText() == "timestamp")
+    if(ui->comboBoxDateAndTimeFormats->currentText() == "ISO Date")
     {
         //
-        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toSecsSinceEpoch();
+        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(Qt::ISODate);
 
     //
     } else {
