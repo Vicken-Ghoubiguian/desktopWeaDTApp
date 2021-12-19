@@ -12,7 +12,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     // Definition and implementation of date and time formats QList<QString>...
     this->allDateTimeFormatsQList.append("timestamp");
-    this->allDateTimeFormatsQList.append("dd.MM.yyyy");
+    this->allDateTimeFormatsQList.append("dddd dd MM yyyy hh:mm:ss");
     this->allDateTimeFormatsQList.append("ddd MMMM d yy");
     this->allDateTimeFormatsQList.append("hh:mm:ss.zzz");
     this->allDateTimeFormatsQList.append("hh:mm:ss.z");
@@ -122,13 +122,13 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     if(ui->comboBoxDateAndTimeFormats->currentText() == "timestamp")
     {
         //
-        qDebug() << currentTimeZoneDateTime.toSecsSinceEpoch();
+        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toSecsSinceEpoch();
 
     //
     } else {
 
         //
-        qDebug() << currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
+        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
