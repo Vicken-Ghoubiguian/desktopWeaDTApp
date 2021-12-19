@@ -16,7 +16,8 @@ SOURCES += \
     main.cpp \
     maindesktopweadtwindow.cpp \
     weather.cpp \
-    weatherin.cpp
+    weatherin.cpp \
+    wind.cpp
 
 HEADERS += \
     coordinates.h \
@@ -25,7 +26,8 @@ HEADERS += \
     humidity.h \
     maindesktopweadtwindow.h \
     weather.h \
-    weatherin.h
+    weatherin.h \
+    wind.h
 
 FORMS += \
     maindesktopweadtwindow.ui
