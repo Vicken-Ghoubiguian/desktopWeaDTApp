@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QDateTime>
 #include <QTimeZone>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
@@ -40,6 +41,9 @@ private:
 
     //
     QList<QString> allDateTimeFormatsQList;
+
+    //
+    QTimer* dateTimeTimer;
 
     //
     QList<QString> getAllIANATimezones();
