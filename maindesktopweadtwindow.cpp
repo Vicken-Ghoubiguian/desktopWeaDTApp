@@ -52,6 +52,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->flagDisplayer->setPixmap(pm);
     ui->flagDisplayer->setScaledContents(true);*/
 
+    //
+
+    //
+    this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
+    this->ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
+
     // Definition of the date and time timer to follow current time...
     this->dateTimeTimer = new QTimer(this);
 
