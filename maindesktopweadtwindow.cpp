@@ -116,7 +116,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
         //
         //qDebug() << ui->comboBoxOfIANATimezones->currentText().toUtf8() << ": " << this->getDateTimeForSpecificTimeZone();
 
-        this->getDateTimeForSpecificTimeZone();
+        //this->getDateTimeForSpecificTimeZone();
 
     //
     } else {
@@ -150,16 +150,4 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
-}
-
-// 'getDateTimeForSpecificTimeZone' function to return the current date and time from the current timezone...
-qint64 MainDesktopWeaDTWindow::getDateTimeForSpecificTimeZone()
-{
-    // Definition of the 'currentQTimeZone' QTimeZone object from the current timezone...
-    QTimeZone currentQTimeZone(ui->comboBoxOfIANATimezones->currentText().toUtf8());
-
-    qDebug() << QDateTime::currentSecsSinceEpoch() << " ... " << currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
-
-    // Returning the current date and time of the current timezone, from the sum of the UTC timestamp with the timezone's offset from UTC as number of seconds, as a timestamp...
-    return QDateTime::currentSecsSinceEpoch() + currentQTimeZone.offsetFromUtc(QDateTime::currentDateTime());
 }
