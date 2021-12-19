@@ -9,15 +9,23 @@ CONFIG += c++11
 DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    coordinates.cpp \
     countryflag.cpp \
+    geographiclocation.cpp \
+    humidity.cpp \
     main.cpp \
     maindesktopweadtwindow.cpp \
-    weather.cpp
+    weather.cpp \
+    weatherin.cpp
 
 HEADERS += \
+    coordinates.h \
     countryflag.h \
+    geographiclocation.h \
+    humidity.h \
     maindesktopweadtwindow.h \
-    weather.h
+    weather.h \
+    weatherin.h
 
 FORMS += \
     maindesktopweadtwindow.ui
