@@ -3,12 +3,12 @@
 
 #include <QObject>
 
-class countryFlag : public QObject
+class CountryFlag : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit countryFlag(QString countryCode, QObject *parent = nullptr);
+    explicit CountryFlag(QString countryCode, QObject *parent = nullptr);
     QString getFlagURL();
     QString getCountryCode();
     QString getCountryName();

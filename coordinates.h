@@ -2,13 +2,13 @@
 #define COORDINATES_H
 
 
-class coordinates
+class Coordinates
 {
 
 public:
 
     //
-    coordinates(double longitude, double latitude);
+    Coordinates(double longitude, double latitude);
 
 private:
 

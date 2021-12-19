@@ -1,7 +1,7 @@
 #include "humidity.h"
 
 //
-humidity::humidity(int humidityValue)
+Humidity::Humidity(int humidityValue)
 {
     this->value = humidityValue;
 }

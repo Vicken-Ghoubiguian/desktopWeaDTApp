@@ -3,13 +3,13 @@
 
 #include <QString>
 
-class geographicLocation
+class GeographicLocation
 {
 
 public:
 
     //
-    geographicLocation(QString countryCode, QString cityName);
+    GeographicLocation(QString countryCode, QString cityName);
 
 private:
 

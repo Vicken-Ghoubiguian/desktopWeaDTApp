@@ -3,13 +3,13 @@
 
 #include <QString>
 
-class weatherIn
+class WeatherIn
 {
 
 public:
 
     //
-    weatherIn(int idValue, QString mainValue, QString descriptionValue, QString icon);
+    WeatherIn(int idValue, QString mainValue, QString descriptionValue, QString icon);
 
 private:
 

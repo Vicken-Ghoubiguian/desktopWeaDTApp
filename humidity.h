@@ -3,13 +3,13 @@
 
 #include <QString>
 
-class humidity
+class Humidity
 {
 
 public:
 
     //
-    humidity(int humidityValue);
+    Humidity(int humidityValue);
 
 private:
 

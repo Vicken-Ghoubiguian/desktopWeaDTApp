@@ -1,25 +1,25 @@
 #include "countryflag.h"
 
 //
-countryFlag::countryFlag(QString countryCode, QObject *parent) : QObject(parent)
+CountryFlag::CountryFlag(QString countryCode, QObject *parent) : QObject(parent)
 {
 
 }
 
 //
-QString countryFlag::getFlagURL()
+QString CountryFlag::getFlagURL()
 {
     return this->flagURL;
 }
 
 //
-QString countryFlag::getCountryCode()
+QString CountryFlag::getCountryCode()
 {
     return this->countryCode;
 }
 
 //
-QString countryFlag::getCountryName()
+QString CountryFlag::getCountryName()
 {
     return this->countryName;
 }
