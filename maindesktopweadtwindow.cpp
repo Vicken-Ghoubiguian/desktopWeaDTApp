@@ -38,10 +38,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
     this->updateDisplayedTimeForSpecificTimeZone();
 
-    //
+    // Definition of the application's (and main window's too) name...
     this->setWindowTitle("L'app which déchire vraiment ta life !!!!");
 
-    //
+    // Definition of the application's (and main window's too) fixed size...
     this->setFixedSize(820, 600);
 
     //
