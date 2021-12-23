@@ -36,6 +36,14 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     // Definition and implementation of IANA timezones comboBox, the current timezone and the first implementation of the date and time displayer's function...
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
+
+    //
+    QFont dateTimeDisplayerFont;
+    dateTimeDisplayerFont.setPointSize(27);
+
+    ui->dateTimeDisplayer->setFont(dateTimeDisplayerFont);
+
+    //
     this->updateDisplayedTimeForSpecificTimeZone();
 
     // Definition of the application's (and main window's too) name...
