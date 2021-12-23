@@ -42,6 +42,11 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
     ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
+    //
+    ui->localizationLineEdit->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+    ui->countryCodeLineEdit->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+    ui->apiKeyLineEdit->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+
     // Stylisation of widgets in the 'weather' tab's section...
     ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
     ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
