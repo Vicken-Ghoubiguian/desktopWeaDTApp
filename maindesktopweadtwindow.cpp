@@ -44,25 +44,11 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     // Set all fonts for corresponding widgets...
     ui->dateTimeDisplayer->setFont(dateTimeDisplayerFont);
 
-    //
-    /*QFont comboBoxOfIANATimezonesFont;
-    comboBoxOfIANATimezonesFont.fromString("background-color: skyblue; color: white; border-radius: 10px;");
-
-    //
-    ui->comboBoxOfIANATimezones->setFont(comboBoxOfIANATimezonesFont);
-
-    //
-    QFont comboBoxDateAndTimeFormatsFont;
-    comboBoxDateAndTimeFormatsFont.fromString("background-color: skyblue; color: white; border-radius: 10px;");
-
-    //
-    ui->comboBoxDateAndTimeFormats->setFont(comboBoxDateAndTimeFormatsFont);*/
-
-    //
+    // Stylisation of widgets in the 'date and time' tab's section...
     ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
     ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
-    // Stylisation of widgets in the 'date and time' tab's section...
+    // Stylisation of widgets in the 'weather' tab's section...
     this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
     this->ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
 
