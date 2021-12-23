@@ -66,16 +66,6 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLCDNumber" name="lcdNumber">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>190</y>
-        <width>771</width>
-        <height>211</height>
-       </rect>
-      </property>
-     </widget>
      <widget class="QComboBox" name="comboBoxDateAndTimeFormats">
       <property name="geometry">
        <rect>
@@ -97,6 +87,19 @@
       </property>
       <property name="text">
        <string>Select the date and time format you want :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dateTimeDisplayer">
+      <property name="geometry">
+       <rect>
+        <x>14</x>
+        <y>195</y>
+        <width>761</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
       </property>
      </widget>
     </widget>
