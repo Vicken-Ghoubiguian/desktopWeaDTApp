@@ -41,6 +41,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     QFont dateTimeDisplayerFont;
     dateTimeDisplayerFont.setPointSize(20);
 
+    // Set all fonts for corresponding widgets...
     ui->dateTimeDisplayer->setFont(dateTimeDisplayerFont);
 
     //
