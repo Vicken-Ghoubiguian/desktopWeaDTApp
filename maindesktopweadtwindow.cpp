@@ -58,6 +58,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->comboBoxDateAndTimeFormats->setFont(comboBoxDateAndTimeFormatsFont);
 
+    // Stylisation of widgets in the 'date and time' tab's section...
+    this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
+    this->ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
+
     //
     this->updateDisplayedTimeForSpecificTimeZone();
 
@@ -74,10 +78,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     /*QPixmap pm("https://flagcdn.com/16x12/za.png");
     ui->flagDisplayer->setPixmap(pm);
     ui->flagDisplayer->setScaledContents(true);*/
-
-    // Stylisation of widgets in the 'date and time' tab's section...
-    this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
-    this->ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
 
     // Definition of the date and time timer to follow current time...
     this->dateTimeTimer = new QTimer(this);
