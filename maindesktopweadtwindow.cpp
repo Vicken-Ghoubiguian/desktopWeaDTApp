@@ -48,8 +48,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->apiKeyLineEdit->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
     // Stylisation of widgets in the 'weather' tab's section...
-    ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
+    ui->resetButton->setStyleSheet("cursor: pointer; background-color: red; color: white; border-radius: 10px;");
     ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
+
+    //
+    ui->resetButton->setCursor(Qt::PointingHandCursor);
+    ui->validationButton->setCursor(Qt::PointingHandCursor);
 
     //
     this->updateDisplayedTimeForSpecificTimeZone();
