@@ -146,14 +146,17 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     if(ui->comboBoxDateAndTimeFormats->currentText() == "ISO Date")
     {
         //
-        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(Qt::ISODate);
+        //qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(Qt::ISODate);
+        ui->dateTimeDisplayer->setText(ui->comboBoxOfIANATimezones->currentText() + ": " + currentTimeZoneDateTime.toString(Qt::ISODate));
 
     //
     } else {
 
         //
-        qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
+        //qDebug() << ui->comboBoxOfIANATimezones->currentText() << ": " << currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText());
+        ui->dateTimeDisplayer->setText(ui->comboBoxOfIANATimezones->currentText() + ": " + currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText()));
     }
 
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
+    //ui->dateTimeDisplayer->setText(this->getDateTimeForSpecificTimeZone());
 }
