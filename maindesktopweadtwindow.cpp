@@ -45,6 +45,20 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->dateTimeDisplayer->setFont(dateTimeDisplayerFont);
 
     //
+    QFont comboBoxOfIANATimezonesFont;
+    comboBoxOfIANATimezonesFont.fromString("background-color: skyblue; color: white; border-radius: 10px;");
+
+    //
+    ui->comboBoxOfIANATimezones->setFont(comboBoxOfIANATimezonesFont);
+
+    //
+    QFont comboBoxDateAndTimeFormatsFont;
+    comboBoxDateAndTimeFormatsFont.fromString("background-color: skyblue; color: white; border-radius: 10px;");
+
+    //
+    ui->comboBoxDateAndTimeFormats->setFont(comboBoxDateAndTimeFormatsFont);
+
+    //
     this->updateDisplayedTimeForSpecificTimeZone();
 
     // Definition of the application's (and main window's too) name...
@@ -60,10 +74,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     /*QPixmap pm("https://flagcdn.com/16x12/za.png");
     ui->flagDisplayer->setPixmap(pm);
     ui->flagDisplayer->setScaledContents(true);*/
-
-    // Stylisation of widgets in the 'date and time' tab's section...
-    this->ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
-    this->ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
     // Stylisation of widgets in the 'date and time' tab's section...
     this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
