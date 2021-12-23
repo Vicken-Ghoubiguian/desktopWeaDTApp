@@ -53,7 +53,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->setWindowTitle("L'app which déchire vraiment ta life !!!!");
 
     // Definition of the application's (and main window's too) fixed size...
-    this->setFixedSize(820, 600);
+    this->setFixedSize(840, 600);
 
     //
     //this->setWindowIcon(QIcon("ressources/img/cybcity.png"));
