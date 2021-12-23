@@ -37,15 +37,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
-    // Definition of the 'dateTimeDisplayerFont' which is the 'dateTimeDisplayer' QLabel font...
-    /*QFont dateTimeDisplayerFont;
-    dateTimeDisplayerFont.setPointSize(20);
-
-    // Set all fonts for corresponding widgets...
-    ui->dateTimeDisplayer->setFont(dateTimeDisplayerFont);*/
-
     // Stylisation of widgets in the 'date and time' tab's section...
-    ui->dateTimeDisplayer->setStyleSheet("font-size: 55px;");
+    ui->dateTimeDisplayer->setStyleSheet("font-size: 45px;");
     ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
     ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
