@@ -38,7 +38,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
     // Stylisation of widgets in the 'date and time' tab's section...
-    ui->dateTimeDisplayer->setStyleSheet("font-size: 45px;");
+    ui->dateTimeDisplayer->setStyleSheet("font-size: 27px;");
     ui->comboBoxOfIANATimezones->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
     ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
