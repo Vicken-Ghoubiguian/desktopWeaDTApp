@@ -49,8 +49,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
     // Stylisation of widgets in the 'weather' tab's section...
-    this->ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
-    this->ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
+    ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
+    ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
 
     //
     this->updateDisplayedTimeForSpecificTimeZone();
