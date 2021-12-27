@@ -180,4 +180,7 @@ void MainDesktopWeaDTWindow::resetInputsForWeather() {
 
     //
     ui->apiKeyLineEdit->setText("");
+
+    //
+    ui->weatherTextDisplay->setText("");
 }
