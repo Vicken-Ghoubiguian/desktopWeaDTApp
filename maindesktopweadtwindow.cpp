@@ -170,7 +170,8 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 }
 
 //
-void MainDesktopWeaDTWindow::resetInputsForWeather() {
+void MainDesktopWeaDTWindow::resetInputsForWeather()
+{
 
     //
     ui->localizationLineEdit->setText("");
@@ -183,4 +184,10 @@ void MainDesktopWeaDTWindow::resetInputsForWeather() {
 
     //
     ui->weatherTextDisplay->setText("");
+}
+
+//
+void MainDesktopWeaDTWindow::validationInputsWeather()
+{
+
 }
