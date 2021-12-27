@@ -83,6 +83,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->comboBoxDateAndTimeFormats, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
+    connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
 }
 
 // Definition of the 'MainDesktopWeaDTWindow' class destructor...
