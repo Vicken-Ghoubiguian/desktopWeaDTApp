@@ -93,10 +93,10 @@ MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
     delete ui;
 }
 
-//
+// Definition of the 'getAllTimezonesQList' getter which will return the 'allTimezonesQList' attribute...
 QList<QString> MainDesktopWeaDTWindow::getAllTimezonesQList()
 {
-    //
+    // Returning the 'allTimezonesQList' attribute...
     return this->allTimezonesQList;
 }
 
@@ -130,10 +130,10 @@ QList<QString> MainDesktopWeaDTWindow::getAllIANATimezones()
     return listOfAllIANATimezonesQListQString;
 }
 
-//
+// Definition of the 'getSystemIANATimezone' getter which will get and return the system's IANA timezone's id...
 QString MainDesktopWeaDTWindow::getSystemIANATimezone()
 {
-    //
+    // Getting and returning the current IANA timezone (system's IANA timezone) id...
     return QString(QTimeZone::systemTimeZone().id());
 }
 
