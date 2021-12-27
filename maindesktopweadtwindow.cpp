@@ -137,10 +137,10 @@ QString MainDesktopWeaDTWindow::getSystemIANATimezone()
     return QString(QTimeZone::systemTimeZone().id());
 }
 
-//
+// Definition of the 'getIANATimezoneIndex' function which will get and return the passed in parameter IANA timezone's id...
 int MainDesktopWeaDTWindow::getIANATimezoneIndex(QString ianaTimeZone)
 {
-    //
+    // Definition of the 'getIANATimezoneIndex' function which will get and return the passed in parameter IANA timezone's id...
     return this->allTimezonesQList.indexOf(ianaTimeZone);
 }
 
