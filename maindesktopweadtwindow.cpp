@@ -172,3 +172,8 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     //ui->lcdNumber->display(this->getDateTimeForSpecificTimeZone());
     //ui->dateTimeDisplayer->setText(this->getDateTimeForSpecificTimeZone());
 }
+
+void MainDesktopWeaDTWindow::resetInputsForWeather() {
+
+
+}

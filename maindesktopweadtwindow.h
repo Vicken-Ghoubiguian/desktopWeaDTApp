@@ -31,6 +31,9 @@ private slots:
     //
     void updateDisplayedTimeForSpecificTimeZone();
 
+    //
+    void resetInputsForWeather();
+
 private:
 
     //
