@@ -102,6 +102,19 @@
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="flagLabel">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>405</y>
+        <width>161</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="weatherTab">
      <attribute name="title">
