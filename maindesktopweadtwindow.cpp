@@ -176,14 +176,8 @@ void MainDesktopWeaDTWindow::resetInputsForWeather()
 
     //
     ui->localizationLineEdit->setText("");
-
-    //
     ui->countryCodeLineEdit->setText("");
-
-    //
     ui->apiKeyLineEdit->setText("");
-
-    //
     ui->weatherTextDisplay->setText("");
 }
 
