@@ -174,7 +174,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 void MainDesktopWeaDTWindow::resetInputsForWeather()
 {
 
-    //
+    // Set all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
     ui->localizationLineEdit->setText("");
     ui->countryCodeLineEdit->setText("");
     ui->apiKeyLineEdit->setText("");
