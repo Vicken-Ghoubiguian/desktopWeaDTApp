@@ -170,7 +170,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     }
 }
 
-// Definition of the 'resetInputsForWeather' to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
+// Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
 void MainDesktopWeaDTWindow::resetInputsForWeather()
 {
 
