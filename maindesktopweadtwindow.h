@@ -34,6 +34,9 @@ private slots:
     //
     void resetInputsForWeather();
 
+    //
+    void validationInputsWeather();
+
 private:
 
     //
