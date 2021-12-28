@@ -96,6 +96,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
+    //connect(weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinished(QNetworkReply*)));
 }
 
 // Definition of the 'MainDesktopWeaDTWindow' class destructor...
@@ -197,4 +198,20 @@ void MainDesktopWeaDTWindow::resetInputsForWeather()
 void MainDesktopWeaDTWindow::validationInputsWeather()
 {
 
+    //
+    //weatherRequest.setUrl(QUrl("http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&appid=dddd"));
+
+    //
+    //weatherManager->get(weatherRequest);
+}
+
+void MainDesktopWeaDTWindow::managerFinished(QNetworkReply *reply) {
+    /*if (reply->error()) {
+        qDebug() << reply->errorString();
+        return;
+    }
+
+    QString answer = reply->readAll();
+
+    qDebug() << answer;*/
 }
