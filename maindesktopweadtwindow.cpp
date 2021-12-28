@@ -12,7 +12,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     // Definition and implementation of date and time formats QList<QString>...
     this->allDateTimeFormatsQList.append("ISO Date");
-
     this->allDateTimeFormatsQList.append("dd MM yyyy");
     this->allDateTimeFormatsQList.append("ddd. dd MMM. yyyy");
     this->allDateTimeFormatsQList.append("dddd dd MMMM yyyy");
@@ -22,7 +21,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allDateTimeFormatsQList.append("dd MM yyyy hh:mm:ss ap");
     this->allDateTimeFormatsQList.append("ddd. dd MMM. yyyy hh:mm:ss ap");
     this->allDateTimeFormatsQList.append("dddd dd MMMM yyyy hh:mm:ss ap");
-
     this->allDateTimeFormatsQList.append("MM dd yyyy");
     this->allDateTimeFormatsQList.append("ddd. MMM. dd yyyy");
     this->allDateTimeFormatsQList.append("dddd MMMM dd yyyy");
@@ -32,7 +30,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allDateTimeFormatsQList.append("MM dd yyyy hh:mm:ss ap");
     this->allDateTimeFormatsQList.append("ddd. MMM. dd yyyy hh:mm:ss ap");
     this->allDateTimeFormatsQList.append("dddd MMMM dd yyyy hh:mm:ss ap");
-
     this->allDateTimeFormatsQList.append("dd/MM/yyyy");
     this->allDateTimeFormatsQList.append("dd/MM/yyyy hh:mm:ss");
     this->allDateTimeFormatsQList.append("dd/MM/yyyy hh:mm:ss ap");
