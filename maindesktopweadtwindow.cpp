@@ -76,7 +76,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->setFixedSize(840, 600);
 
     //
-    //this->setWindowIcon(QIcon("ressources/img/cybcity.png"));
+    //this->setWindowIcon(QIcon("://img/cybcity.png"));
 
     //
     //QPixmap pm("://img/cybcity.png");

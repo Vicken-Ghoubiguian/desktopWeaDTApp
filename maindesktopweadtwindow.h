@@ -5,6 +5,8 @@
 #include <QDateTime>
 #include <QTimeZone>
 #include <QTimer>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
@@ -50,6 +52,12 @@ private:
 
     //
     QTimer* dateTimeTimer;
+
+    //
+    QNetworkAccessManager *weatherManager;
+
+    //
+    QNetworkRequest weatherRequest;
 
     //
     QList<QString> getAllIANATimezones();
