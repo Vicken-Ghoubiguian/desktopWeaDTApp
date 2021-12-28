@@ -16,6 +16,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allDateTimeFormatsQList.append("ddd dd MM yyyy");
     this->allDateTimeFormatsQList.append("dd/MM/yyyy");
     this->allDateTimeFormatsQList.append("dddd dd MM yyyy hh:mm:ss");
+    this->allDateTimeFormatsQList.append("dddd dd MMMM yyyy hh:mm:ss");
     this->allDateTimeFormatsQList.append("dddd dd MM yyyy hh:mm:ss ap");
     this->allDateTimeFormatsQList.append("ddd dd MM yyyy hh:mm:ss");
     this->allDateTimeFormatsQList.append("ddd dd MM yyyy hh:mm:ss ap");
