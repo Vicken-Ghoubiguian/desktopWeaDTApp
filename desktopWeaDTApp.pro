@@ -32,5 +32,10 @@ HEADERS += \
 FORMS += \
     maindesktopweadtwindow.ui
 
+RESOURCES.files = \
+    img\cybcity.png
+
+RESOURCES.prefix = /
+
 RESOURCES += \
     ressources.qrc

@@ -79,9 +79,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //this->setWindowIcon(QIcon("ressources/img/cybcity.png"));
 
     //
-    /*QPixmap pm("https://flagcdn.com/16x12/za.png");
-    ui->flagDisplayer->setPixmap(pm);
-    ui->flagDisplayer->setScaledContents(true);*/
+    QPixmap pm("://img/cybcity.png");
+    ui->flagLabel->setPixmap(pm);
+    //ui->flagLabel->setScaledContents(true);
 
     // Definition of the date and time timer to follow current time...
     this->dateTimeTimer = new QTimer(this);
