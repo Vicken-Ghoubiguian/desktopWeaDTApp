@@ -1,5 +1,7 @@
 # desktopWeaDTApp
 
-Desktop application developed with Qt in C++ 
+Multi-functional desktop application
 
 ## Contents
+
+developed with Qt in C++ 
