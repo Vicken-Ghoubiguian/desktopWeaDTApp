@@ -96,7 +96,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
-    connect(&weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
+    connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
 
     //connect(&this->flagManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForFlag(QNetworkReply*)));
 
@@ -114,6 +114,13 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     qDebug() << reply;
 }*/
+
+//
+QJsonDocument MainDesktopWeaDTWindow::getWeatherJsonDocument()
+{
+    //
+    return this->weatherJsonDocument;
+}
 
 // Definition of the 'MainDesktopWeaDTWindow' class destructor...
 MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()
@@ -214,9 +221,22 @@ void MainDesktopWeaDTWindow::resetInputsForWeather()
 void MainDesktopWeaDTWindow::validationInputsWeather()
 {
     //
-    QString weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+    QString weatherRequestSUrl = "";
 
-    //qDebug() << weatherRequestSUrl;
+    //
+    if(ui->countryCodeLineEdit->text() == "")
+    {
+
+        //
+        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+
+    //
+    } else {
+
+        //
+        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+
+    }
 
     //
     weatherRequest.setUrl(QUrl(weatherRequestSUrl));
@@ -237,6 +257,12 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         //
         return;
     }
+
+    //
+    //QJsonDocument weatherJsonDocument = QJsonDocument::fromJson(reply->readAll());
+
+    //
+    //ui->weatherTextDisplay->setText();
 
     //
     ui->weatherTextDisplay->setText(reply->readAll());

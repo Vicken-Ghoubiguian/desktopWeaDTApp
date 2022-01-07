@@ -8,6 +8,7 @@
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
 #include <QNetworkReply>
+#include <QJsonDocument>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
@@ -70,6 +71,12 @@ private:
 
     //
     QNetworkRequest weatherRequest;
+
+    //
+    QJsonDocument weatherJsonDocument;
+
+    //
+    QJsonDocument getWeatherJsonDocument();
 
     //
     QList<QString> getAllIANATimezones();
