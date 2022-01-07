@@ -222,14 +222,13 @@ void MainDesktopWeaDTWindow::validationInputsWeather()
 }
 
 void MainDesktopWeaDTWindow::managerFinished(QNetworkReply *reply) {
-    /*if (reply->error()) {
+
+    if (reply->error()) {
         qDebug() << reply->errorString();
         return;
     }
 
     QString answer = reply->readAll();
 
-    qDebug() << answer;*/
-
-    qDebug() << reply;
+    qDebug() << answer;
 }
