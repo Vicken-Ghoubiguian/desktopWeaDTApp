@@ -213,9 +213,11 @@ void MainDesktopWeaDTWindow::resetInputsForWeather()
 //
 void MainDesktopWeaDTWindow::validationInputsWeather()
 {
+    //
+    QString weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=dddd";
 
     //
-    weatherRequest.setUrl(QUrl("http://api.openweathermap.org/data/2.5/weather?q=Paris,fr&appid=dddd"));
+    weatherRequest.setUrl(QUrl(weatherRequestSUrl));
 
     //
     weatherManager.get(weatherRequest);
