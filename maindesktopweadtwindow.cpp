@@ -235,8 +235,11 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     }
 
     //
-    QString answer = reply->readAll();
+    //QString answer = reply->readAll();
 
     //
-    qDebug() << answer;
+    ui->weatherTextDisplay->setText(reply->readAll());
+
+    //
+    //qDebug() << answer;
 }
