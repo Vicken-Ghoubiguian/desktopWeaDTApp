@@ -221,14 +221,22 @@ void MainDesktopWeaDTWindow::validationInputsWeather()
     weatherManager.get(weatherRequest);
 }
 
+//
 void MainDesktopWeaDTWindow::managerFinished(QNetworkReply *reply) {
 
+    //
     if (reply->error()) {
+
+        //
         qDebug() << reply->errorString();
+
+        //
         return;
     }
 
+    //
     QString answer = reply->readAll();
 
+    //
     qDebug() << answer;
 }
