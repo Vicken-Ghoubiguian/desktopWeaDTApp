@@ -57,7 +57,13 @@ private:
     QTimer* dateTimeTimer;
 
     //
+    QNetworkAccessManager flagManager;
+
+    //
     QNetworkAccessManager weatherManager;
+
+    //
+    QNetworkRequest flagRequest;
 
     //
     QNetworkRequest weatherRequest;

@@ -215,5 +215,5 @@ void MainDesktopWeaDTWindow::managerFinished(QNetworkReply *reply) {
 
     qDebug() << answer;*/
 
-    qDebug() << "XXXX";
+    qDebug() << reply;
 }
