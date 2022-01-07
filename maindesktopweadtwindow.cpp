@@ -97,7 +97,23 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
     connect(&weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinished(QNetworkReply*)));
+
+    //connect(&this->flagManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForFlag(QNetworkReply*)));
+
+    /*QUrl url("https://flagcdn.com/w40/za.png");
+    flagRequest.setUrl(url);
+    flagManager.get(flagRequest);*/
 }
+
+/*void MainDesktopWeaDTWindow::managerFinishedForFlag(QNetworkReply *reply)
+{
+    if (reply->error()) {
+            qDebug() << reply->errorString();
+            return;
+    }
+
+    qDebug() << reply;
+}*/
 
 // Definition of the 'MainDesktopWeaDTWindow' class destructor...
 MainDesktopWeaDTWindow::~MainDesktopWeaDTWindow()

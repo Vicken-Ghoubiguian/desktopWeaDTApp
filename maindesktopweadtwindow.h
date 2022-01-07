@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
+#include <QNetworkReply>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
@@ -42,6 +43,8 @@ private slots:
     //
     void managerFinished(QNetworkReply *reply);
 
+    //void managerFinishedForFlag(QNetworkReply *reply);
+
 private:
 
     //
@@ -57,13 +60,13 @@ private:
     QTimer* dateTimeTimer;
 
     //
-    QNetworkAccessManager flagManager;
+    //QNetworkAccessManager flagManager;
 
     //
     QNetworkAccessManager weatherManager;
 
     //
-    QNetworkRequest flagRequest;
+    //QNetworkRequest flagRequest;
 
     //
     QNetworkRequest weatherRequest;
