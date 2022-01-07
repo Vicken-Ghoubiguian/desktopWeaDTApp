@@ -230,18 +230,12 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     if (reply->error()) {
 
         //
-        qDebug() << reply->errorString();
+        ui->weatherTextDisplay->setText(reply->errorString());
 
         //
         return;
     }
 
     //
-    //QString answer = reply->readAll();
-
-    //
     ui->weatherTextDisplay->setText(reply->readAll());
-
-    //
-    //qDebug() << answer;
 }
