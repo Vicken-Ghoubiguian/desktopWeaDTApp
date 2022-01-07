@@ -214,7 +214,9 @@ void MainDesktopWeaDTWindow::resetInputsForWeather()
 void MainDesktopWeaDTWindow::validationInputsWeather()
 {
     //
-    QString weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=dddd";
+    QString weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+
+    //qDebug() << weatherRequestSUrl;
 
     //
     weatherRequest.setUrl(QUrl(weatherRequestSUrl));
