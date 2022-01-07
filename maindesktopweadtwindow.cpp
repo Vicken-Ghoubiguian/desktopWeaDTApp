@@ -96,7 +96,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
-    connect(&weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinished(QNetworkReply*)));
+    connect(&weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
 
     //connect(&this->flagManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForFlag(QNetworkReply*)));
 
@@ -222,7 +222,7 @@ void MainDesktopWeaDTWindow::validationInputsWeather()
 }
 
 //
-void MainDesktopWeaDTWindow::managerFinished(QNetworkReply *reply) {
+void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
 
     //
     if (reply->error()) {

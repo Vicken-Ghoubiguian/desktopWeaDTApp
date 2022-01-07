@@ -41,7 +41,7 @@ private slots:
     void validationInputsWeather();
 
     //
-    void managerFinished(QNetworkReply *reply);
+    void managerFinishedForWeather(QNetworkReply *reply);
 
     //void managerFinishedForFlag(QNetworkReply *reply);
 
