@@ -81,7 +81,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     //QPixmap pm("://img/cybcity.png");
     //ui->flagLabel->setPixmap(pm);
-    ui->flagLabel->setStyleSheet("background-color: red");
+    ui->flagLabelforDateTime->setStyleSheet("background-color: red");
     //ui->flagLabel->setScaledContents(true);
 
     // Definition of the date and time timer to follow current time...
@@ -228,15 +228,17 @@ void MainDesktopWeaDTWindow::validationInputsWeather()
     {
 
         //
-        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text() + "";
 
     //
     } else {
 
         //
-        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text();
+        weatherRequestSUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + ui->localizationLineEdit->text() + "," + ui->countryCodeLineEdit->text() + "&appid=" + ui->apiKeyLineEdit->text() + "";
 
     }
+
+    qDebug() << weatherRequestSUrl;
 
     //
     weatherRequest.setUrl(QUrl(weatherRequestSUrl));
