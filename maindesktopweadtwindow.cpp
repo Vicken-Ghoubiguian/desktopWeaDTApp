@@ -62,6 +62,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->resetButton->setStyleSheet("background-color: red; color: white; border-radius: 10px;");
     ui->validationButton->setStyleSheet("background-color: green; color: white; border-radius: 10px;");
 
+    //
+    ui->weatherFrame->setStyleSheet("background-color: black;");
+
     // Definition of the 'weather' tab's section's buttons' cursors...
     ui->resetButton->setCursor(Qt::PointingHandCursor);
     ui->validationButton->setCursor(Qt::PointingHandCursor);
