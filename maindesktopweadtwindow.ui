@@ -110,10 +110,10 @@
      <widget class="QTextBrowser" name="weatherTextDisplay">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>330</y>
-        <width>491</width>
-        <height>211</height>
+        <x>270</x>
+        <y>300</y>
+        <width>461</width>
+        <height>241</height>
        </rect>
       </property>
      </widget>
