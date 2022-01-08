@@ -238,8 +238,6 @@ void MainDesktopWeaDTWindow::validationInputsWeather()
 
     }
 
-    qDebug() << weatherRequestSUrl;
-
     //
     weatherRequest.setUrl(QUrl(weatherRequestSUrl));
 
