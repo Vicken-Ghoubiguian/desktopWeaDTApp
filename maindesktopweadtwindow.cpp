@@ -274,12 +274,25 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     if(jsonDocument.isObject() == false) {
 
         //
-        qDebug() << errJSON.errorString();
+        ui->weatherTextDisplay->setText(errJSON.errorString());
+
+        //
+        return;
     }
 
-    /*QJsonObject object = jsonDocument.object();
+    if(jsonDocument.isObject() == false) qDebug() << "Not obj...";
+
+    qDebug() << jsonDocument;
+
+    qDebug() << jsonDocument.isObject();
+
     QJsonObject obj = jsonDocument.object();
-    QJsonValue coordValues = obj.value("coord");*/
+
+    qDebug() << "TTT: " << obj.empty() << " - " << obj.size();
+
+    QJsonValue codValue = obj.value("cod");
+
+    qDebug() << "Testy 2: " << codValue.toString();
 
     //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
