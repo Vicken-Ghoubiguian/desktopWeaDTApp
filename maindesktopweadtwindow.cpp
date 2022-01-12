@@ -265,7 +265,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
 
     qDebug() << "====================";
     qDebug() << reply->readAll();
-    QByteArray truc("{\"name\":\"John\", \"age\":30, \"car\":null}");
+    QByteArray truc("{\"coord\":{\"lon\":2.3488,\"lat\":48.8534},\"weather\":[{\"id\":804,\"main\":\"Clouds\",\"description\":\"overcast clouds\",\"icon\":\"04n\"}],\"base\":\"stations\",\"main\":{\"temp\":277.71,\"feels_like\":277.71,\"temp_min\":276.35,\"temp_max\":278.75,\"pressure\":1039,\"humidity\":84},\"visibility\":7000,\"wind\":{\"speed\":0.45,\"deg\":90,\"gust\":1.34},\"clouds\":{\"all\":100},\"dt\":1642004576,\"sys\":{\"type\":2,\"id\":2041230,\"country\":\"FR\",\"sunrise\":1641973240,\"sunset\":1642004196},\"timezone\":3600,\"id\":2988507,\"name\":\"Paris\",\"cod\":200}");
     qDebug() << truc;
     QJsonDocument jsonDocument = QJsonDocument::fromJson(truc, &err);
     qDebug() << err.errorString();
@@ -277,7 +277,6 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     QJsonObject obj = jsonDocument.object();
     QJsonValue coordValues = obj.value("coord");*/
 
-
     //
-    ui->weatherTextDisplay->setText(reply->readAll() + " "); //+ coordValues.toString());
+    ui->weatherTextDisplay->setText("{\"coord\":{\"lon\":2.3488,\"lat\":48.8534},\"weather\":[{\"id\":804,\"main\":\"Clouds\",\"description\":\"overcast clouds\",\"icon\":\"04n\"}],\"base\":\"stations\",\"main\":{\"temp\":277.71,\"feels_like\":277.71,\"temp_min\":276.35,\"temp_max\":278.75,\"pressure\":1039,\"humidity\":84},\"visibility\":7000,\"wind\":{\"speed\":0.45,\"deg\":90,\"gust\":1.34},\"clouds\":{\"all\":100},\"dt\":1642004576,\"sys\":{\"type\":2,\"id\":2041230,\"country\":\"FR\",\"sunrise\":1641973240,\"sunset\":1642004196},\"timezone\":3600,\"id\":2988507,\"name\":\"Paris\",\"cod\":200}"); //+ coordValues.toString());
 }
