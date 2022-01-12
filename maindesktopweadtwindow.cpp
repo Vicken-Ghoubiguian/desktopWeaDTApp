@@ -261,17 +261,21 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         return;
     }
 
-    QJsonParseError err;
+    //
+    QJsonParseError errJSON;
 
-    qDebug() << "====================";
+    //
     QString weatherHTTPResult = QString(reply->readAll());
-    qDebug() << weatherHTTPResult;
-    QJsonDocument jsonDocument = QJsonDocument::fromJson(weatherHTTPResult.toUtf8(), &err);
-    qDebug() << err.errorString();
-    qDebug() << jsonDocument;
-    qDebug() << "====================";
 
-    if(jsonDocument.isObject() == false) qDebug() << "It is not a JSON object";
+    //
+    QJsonDocument jsonDocument = QJsonDocument::fromJson(weatherHTTPResult.toUtf8(), &errJSON);
+
+    //
+    if(jsonDocument.isObject() == false) {
+
+        qDebug() << "It is not a JSON object";
+    }
+
     /*QJsonObject object = jsonDocument.object();
     QJsonObject obj = jsonDocument.object();
     QJsonValue coordValues = obj.value("coord");*/
