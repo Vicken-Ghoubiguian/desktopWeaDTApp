@@ -273,7 +273,8 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     //
     if(jsonDocument.isObject() == false) {
 
-        qDebug() << "It is not a JSON object";
+        //
+        qDebug() << errJSON.errorString();
     }
 
     /*QJsonObject object = jsonDocument.object();
