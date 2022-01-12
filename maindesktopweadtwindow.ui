@@ -256,6 +256,11 @@
       <string>😺 Emojis</string>
      </attribute>
     </widget>
+    <widget class="QWidget" name="cameraTab">
+     <attribute name="title">
+      <string>📹 Camera</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
