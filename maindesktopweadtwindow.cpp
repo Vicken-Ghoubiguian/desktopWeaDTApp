@@ -104,6 +104,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
     connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
+    connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
 
     //connect(&this->flagManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForFlag(QNetworkReply*)));
 
@@ -307,9 +308,6 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
 
     //
     QFont newCurrentFontFamily(ui->familyFontComboBox->currentText());
-
-    //
-    //font.setStyleHint(QFont::Monospace);
 
     //
     QApplication::setFont(newCurrentFontFamily);
