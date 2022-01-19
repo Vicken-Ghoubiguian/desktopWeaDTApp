@@ -40,6 +40,8 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     this->availableBackgroundColorQList.append("skyblue");
     this->availableBackgroundColorQList.append("purple");
+    this->availableBackgroundColorQList.append("green");
+    this->availableBackgroundColorQList.append("hunter-green");
 
     // Setup the graphical interface of this application...
     ui->setupUi(this);
