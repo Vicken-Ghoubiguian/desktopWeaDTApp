@@ -94,6 +94,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     // Starting the date and time timer with a 1 second interval (1000 miliseconds)...
     this->dateTimeTimer->start(1000);
 
+    //
+    ui->fontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->comboBoxDateAndTimeFormats, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
