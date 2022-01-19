@@ -15,6 +15,9 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidgetOfInterface">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -262,9 +265,38 @@
      </attribute>
     </widget>
     <widget class="QWidget" name="fontFamilyTab">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
      <attribute name="title">
       <string>🖌️ Font family</string>
      </attribute>
+     <widget class="QLabel" name="fontFamillyLabel">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>50</y>
+        <width>131</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Current font familly :</string>
+      </property>
+     </widget>
+     <widget class="QFontComboBox" name="fontComboBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>50</y>
+        <width>226</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
