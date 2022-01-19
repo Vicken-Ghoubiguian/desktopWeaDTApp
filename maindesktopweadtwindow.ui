@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
@@ -295,6 +295,19 @@
         <width>226</width>
         <height>22</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="backgroundColorLabel">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>90</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Current background color for comboBoxes :</string>
       </property>
      </widget>
     </widget>
