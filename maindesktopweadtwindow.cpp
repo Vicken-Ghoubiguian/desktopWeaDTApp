@@ -338,3 +338,10 @@ QList<QString> MainDesktopWeaDTWindow::getAvailableBackgroundColorQList() {
     //
     return this->availableBackgroundColorQList;
 }
+
+//
+QList<QString> MainDesktopWeaDTWindow::getAllDateTimeFormatsQList() {
+
+    //
+    return this->allDateTimeFormatsQList;
+}

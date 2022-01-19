@@ -33,6 +33,9 @@ public:
     QList<QString> getAllTimezonesQList();
 
     //
+    QList<QString> getAllDateTimeFormatsQList();
+
+    //
     QList<QString> getAvailableBackgroundColorQList();
 
 private slots:
