@@ -30,7 +30,10 @@ public:
     ~MainDesktopWeaDTWindow();
 
     //
-    QList<QString> getAllTimezonesQList(); 
+    QList<QString> getAllTimezonesQList();
+
+    //
+    QList<QString> getAvailableBackgroundColorQList();
 
 private slots:
 
@@ -61,6 +64,9 @@ private:
 
     //
     QList<QString> allDateTimeFormatsQList;
+
+    //
+    QList<QString> availableBackgroundColorQList;
 
     //
     QTimer* dateTimeTimer;

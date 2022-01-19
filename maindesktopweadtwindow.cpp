@@ -37,12 +37,20 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->allDateTimeFormatsQList.append("hh:mm:ss");
     this->allDateTimeFormatsQList.append("hh:mm:ss ap");
 
+    //
+    this->availableBackgroundColorQList.append("skyblue");
+    this->availableBackgroundColorQList.append("purple");
+
     // Setup the graphical interface of this application...
     ui->setupUi(this);
 
     // Definition and implementation of date and time formats comboBox and the current date and time format as index...
     ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
     ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
+
+    //
+    ui->backgroundColorForCBComboBox->addItems(this->availableBackgroundColorQList);
+    ui->backgroundColorForCBComboBox->setCurrentIndex(0);
 
     // Definition and implementation of IANA timezones comboBox, the current timezone and the first implementation of the date and time displayer's function...
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
@@ -96,6 +104,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     //
     ui->familyFontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+
+    //
+
 
     //
     ui->backgroundColorForCBComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
@@ -317,4 +328,11 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
 
     //
     QApplication::setFont(newCurrentFontFamily);
+}
+
+//
+QList<QString> MainDesktopWeaDTWindow::getAvailableBackgroundColorQList() {
+
+    //
+    return this->availableBackgroundColorQList;
 }
