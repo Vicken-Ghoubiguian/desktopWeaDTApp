@@ -5,6 +5,7 @@
 #include <QDateTime>
 #include <QTimeZone>
 #include <QTimer>
+#include <QFont>
 #include <QNetworkAccessManager>
 #include <QNetworkRequest>
 #include <QNetworkReply>
