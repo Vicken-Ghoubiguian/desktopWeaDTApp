@@ -122,7 +122,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
     connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
 
-    //connect(&this->flagManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForFlag(QNetworkReply*)));
 
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
