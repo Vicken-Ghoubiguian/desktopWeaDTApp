@@ -55,6 +55,9 @@ private slots:
     //
     void changeFamilyFont();
 
+    //
+    void changeBackgroundColorOfComboBox();
+
     //void managerFinishedForFlag(QNetworkReply *reply);
 
 private:

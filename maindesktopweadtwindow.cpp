@@ -344,3 +344,9 @@ QList<QString> MainDesktopWeaDTWindow::getAllDateTimeFormatsQList() {
     //
     return this->allDateTimeFormatsQList;
 }
+
+//
+void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
+
+
+}
