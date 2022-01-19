@@ -310,5 +310,8 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
     QFont newCurrentFontFamily(ui->familyFontComboBox->currentText());
 
     //
+
+
+    //
     QApplication::setFont(newCurrentFontFamily);
 }
