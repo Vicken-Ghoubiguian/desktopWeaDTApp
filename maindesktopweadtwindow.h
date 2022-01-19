@@ -46,6 +46,9 @@ private slots:
     //
     void managerFinishedForWeather(QNetworkReply *reply);
 
+    //
+    void changeFamilyFont();
+
     //void managerFinishedForFlag(QNetworkReply *reply);
 
 private:

@@ -284,7 +284,7 @@
        <string>Current font familly :</string>
       </property>
      </widget>
-     <widget class="QFontComboBox" name="fontComboBox">
+     <widget class="QFontComboBox" name="familyFontComboBox">
       <property name="enabled">
        <bool>true</bool>
       </property>

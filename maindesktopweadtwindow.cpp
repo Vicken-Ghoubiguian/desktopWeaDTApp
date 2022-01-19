@@ -95,7 +95,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->dateTimeTimer->start(1000);
 
     //
-    ui->fontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+    ui->familyFontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
@@ -300,4 +300,17 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
 
     //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
+}
+
+//
+void MainDesktopWeaDTWindow::changeFamilyFont() {
+
+    //
+    QFont newCurrentFontFamily(ui->familyFontComboBox->currentText());
+
+    //
+    //font.setStyleHint(QFont::Monospace);
+
+    //
+    QApplication::setFont(newCurrentFontFamily);
 }
