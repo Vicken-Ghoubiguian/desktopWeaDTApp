@@ -97,6 +97,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->familyFontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
+    //
+    ui->backgroundColorForCBComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
+
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->comboBoxDateAndTimeFormats, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
