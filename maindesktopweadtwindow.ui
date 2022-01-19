@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
@@ -259,6 +259,11 @@
     <widget class="QWidget" name="cameraTab">
      <attribute name="title">
       <string>📹 Camera</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="fontFamilyTab">
+     <attribute name="title">
+      <string>🖌️ Font family</string>
      </attribute>
     </widget>
    </widget>
