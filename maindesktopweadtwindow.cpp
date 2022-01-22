@@ -42,7 +42,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     this->availableBackgroundColorQList.append("purple");
     this->availableBackgroundColorQList.append("green");
     this->availableBackgroundColorQList.append("hunter-green");
-    this->availableBackgroundColorQList.append("yellow");
+    this->availableBackgroundColorQList.append("orange");
     this->availableBackgroundColorQList.append("red");
 
     // Setup the graphical interface of this application...
@@ -329,6 +329,9 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
     this->currentFont = newCurrentFontFamily;
 
     //
+
+    //
+    ui->dateTimeDisplayer->setFont(currentFont);
 
     //
     QApplication::setFont(this->currentFont);
