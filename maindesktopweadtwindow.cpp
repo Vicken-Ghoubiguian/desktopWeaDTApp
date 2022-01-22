@@ -335,13 +335,16 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
 void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
 
     //
-    ui->comboBoxOfIANATimezones->setStyleSheet("background-color: red");
-    ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: red");
-    ui->localizationLineEdit->setStyleSheet("background-color: red");
-    ui->countryCodeLineEdit->setStyleSheet("background-color: red");
-    ui->apiKeyLineEdit->setStyleSheet("background-color: red");
-    ui->familyFontComboBox->setStyleSheet("background-color: red");
-    ui->backgroundColorForCBComboBox->setStyleSheet("background-color: red");
+    QString backgroundColorQString = "background-color: red";
+
+    //
+    ui->comboBoxOfIANATimezones->setStyleSheet(backgroundColorQString);
+    ui->comboBoxDateAndTimeFormats->setStyleSheet(backgroundColorQString);
+    ui->localizationLineEdit->setStyleSheet(backgroundColorQString);
+    ui->countryCodeLineEdit->setStyleSheet(backgroundColorQString);
+    ui->apiKeyLineEdit->setStyleSheet(backgroundColorQString);
+    ui->familyFontComboBox->setStyleSheet(backgroundColorQString);
+    ui->backgroundColorForCBComboBox->setStyleSheet(backgroundColorQString);
 }
 
 //
