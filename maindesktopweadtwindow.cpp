@@ -121,7 +121,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
     connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
     connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
-
+    //connect()
 
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
@@ -348,5 +348,12 @@ QList<QString> MainDesktopWeaDTWindow::getAllDateTimeFormatsQList() {
 //
 void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
 
-
+    //
+    ui->comboBoxOfIANATimezones->setStyleSheet("background-color: red");
+    ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: red");
+    ui->localizationLineEdit->setStyleSheet("background-color: red");
+    ui->countryCodeLineEdit->setStyleSheet("background-color: red");
+    ui->apiKeyLineEdit->setStyleSheet("background-color: red");
+    ui->familyFontComboBox->setStyleSheet("background-color: red");
+    ui->backgroundColorForCBComboBox->setStyleSheet("background-color: red");
 }
