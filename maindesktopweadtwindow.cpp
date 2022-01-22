@@ -335,7 +335,7 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
 void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
 
     //
-    QString backgroundColorQString = "background-color: red";
+    QString backgroundColorQString = "background-color: red; color: white; border-radius: 10px;";
 
     //
     ui->comboBoxOfIANATimezones->setStyleSheet(backgroundColorQString);
