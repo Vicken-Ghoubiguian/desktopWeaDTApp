@@ -3,7 +3,8 @@
 
 //
 #include <QApplication>
-#include <QLocale>
+#include <QString>
+#include <QColorDialog>
 
 //
 int main(int argc, char *argv[])
@@ -16,6 +17,11 @@ int main(int argc, char *argv[])
 
     //
     w.show();
+
+    QColorDialog comboBoxColorDialog;
+    QString selectedColor;
+
+    comboBoxColorDialog.show();
 
     //
     return a.exec();

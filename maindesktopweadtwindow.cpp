@@ -125,10 +125,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
     connect(ui->backgroundColorForCBComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeBackgroundColorOfComboBox()));
 
-    QColorDialog comboBoxColorDialog;
-    QString selectedColor;
-    comboBoxColorDialog.show();
-
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
     flagManager.get(flagRequest);*/

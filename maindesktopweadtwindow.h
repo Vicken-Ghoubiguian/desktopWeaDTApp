@@ -11,7 +11,6 @@
 #include <QNetworkReply>
 #include <QJsonDocument>
 #include <QJsonObject>
-#include <QColorDialog>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
