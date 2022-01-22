@@ -38,6 +38,9 @@ public:
     //
     QList<QString> getAvailableBackgroundColorQList();
 
+    //
+    QFont getCurrentFont();
+
 private slots:
 
     //
@@ -91,6 +94,9 @@ private:
 
     //
     QJsonDocument weatherJsonDocument;
+
+    //
+    QFont currentFont;
 
     //
     QJsonDocument getWeatherJsonDocument();

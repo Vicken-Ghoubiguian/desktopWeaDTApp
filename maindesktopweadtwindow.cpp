@@ -109,8 +109,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->familyFontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
-    //
-
+    qDebug() << QApplication::font();
 
     //
     ui->backgroundColorForCBComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
@@ -327,10 +326,12 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
     QFont newCurrentFontFamily(ui->familyFontComboBox->currentText());
 
     //
-
+    this->currentFont = newCurrentFontFamily;
 
     //
-    QApplication::setFont(newCurrentFontFamily);
+
+    //
+    QApplication::setFont(this->currentFont);
 }
 
 //
@@ -361,4 +362,11 @@ QList<QString> MainDesktopWeaDTWindow::getAllDateTimeFormatsQList() {
 
     //
     return this->allDateTimeFormatsQList;
+}
+
+//
+QFont MainDesktopWeaDTWindow::getCurrentFont() {
+
+    //
+    return this->currentFont;
 }
