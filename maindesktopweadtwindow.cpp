@@ -323,7 +323,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
 void MainDesktopWeaDTWindow::changeFamilyFont() {
 
     //
-    QFont newCurrentFontFamily(ui->familyFontComboBox->currentText());
+    QFont newCurrentFontFamily(ui->familyFontComboBox->currentText(),9,400,false);
 
     //
     this->currentFont = newCurrentFontFamily;
