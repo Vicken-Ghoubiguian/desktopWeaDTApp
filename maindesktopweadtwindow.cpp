@@ -52,7 +52,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxDateAndTimeFormats->addItems(this->allDateTimeFormatsQList);
     ui->comboBoxDateAndTimeFormats->setCurrentIndex(0);
 
-    //
+    // Definition and implementation of background color comboBox and the current background color as index...
     ui->backgroundColorForCBComboBox->addItems(this->availableBackgroundColorQList);
     ui->backgroundColorForCBComboBox->setCurrentIndex(0);
 
