@@ -332,6 +332,19 @@ void MainDesktopWeaDTWindow::changeFamilyFont() {
 }
 
 //
+void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
+
+    //
+    ui->comboBoxOfIANATimezones->setStyleSheet("background-color: red");
+    ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: red");
+    ui->localizationLineEdit->setStyleSheet("background-color: red");
+    ui->countryCodeLineEdit->setStyleSheet("background-color: red");
+    ui->apiKeyLineEdit->setStyleSheet("background-color: red");
+    ui->familyFontComboBox->setStyleSheet("background-color: red");
+    ui->backgroundColorForCBComboBox->setStyleSheet("background-color: red");
+}
+
+//
 QList<QString> MainDesktopWeaDTWindow::getAvailableBackgroundColorQList() {
 
     //
@@ -343,17 +356,4 @@ QList<QString> MainDesktopWeaDTWindow::getAllDateTimeFormatsQList() {
 
     //
     return this->allDateTimeFormatsQList;
-}
-
-//
-void MainDesktopWeaDTWindow::changeBackgroundColorOfComboBox() {
-
-    //
-    ui->comboBoxOfIANATimezones->setStyleSheet("background-color: red");
-    ui->comboBoxDateAndTimeFormats->setStyleSheet("background-color: red");
-    ui->localizationLineEdit->setStyleSheet("background-color: red");
-    ui->countryCodeLineEdit->setStyleSheet("background-color: red");
-    ui->apiKeyLineEdit->setStyleSheet("background-color: red");
-    ui->familyFontComboBox->setStyleSheet("background-color: red");
-    ui->backgroundColorForCBComboBox->setStyleSheet("background-color: red");
 }
