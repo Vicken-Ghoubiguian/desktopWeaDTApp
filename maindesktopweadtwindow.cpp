@@ -109,8 +109,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     ui->familyFontComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
-    qDebug() << QApplication::font();
-
     //
     ui->backgroundColorForCBComboBox->setStyleSheet("background-color: skyblue; color: white; border-radius: 10px;");
 
