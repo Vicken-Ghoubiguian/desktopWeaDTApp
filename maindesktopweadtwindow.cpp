@@ -121,7 +121,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(ui->validationButton, SIGNAL(clicked()), this, SLOT(validationInputsWeather()));
     connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
     connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
-    //connect()
+    connect(ui->backgroundColorForCBComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeBackgroundColorOfComboBox()));
 
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
