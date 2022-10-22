@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
@@ -292,7 +292,7 @@
        <rect>
         <x>370</x>
         <y>50</y>
-        <width>226</width>
+        <width>231</width>
         <height>22</height>
        </rect>
       </property>
@@ -318,7 +318,7 @@
        <rect>
         <x>370</x>
         <y>90</y>
-        <width>221</width>
+        <width>231</width>
         <height>22</height>
        </rect>
       </property>
