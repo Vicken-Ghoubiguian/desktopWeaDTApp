@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="dateTimeTab">
      <attribute name="title">
@@ -269,7 +269,7 @@
       <bool>true</bool>
      </property>
      <attribute name="title">
-      <string>🖌️ Font family</string>
+      <string>🖌️ Font</string>
      </attribute>
      <widget class="QLabel" name="fontFamillyLabel">
       <property name="geometry">
