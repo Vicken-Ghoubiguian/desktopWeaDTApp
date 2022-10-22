@@ -4,4 +4,8 @@ Multi-functional desktop application which can do multiple things with time, wea
 
 ## Contents
 
+## Introduction
+
+## Contents
+
 developed with Qt in C++ 
