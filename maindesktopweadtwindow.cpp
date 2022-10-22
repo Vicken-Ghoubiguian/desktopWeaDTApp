@@ -98,7 +98,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //QPixmap pm("://img/cybcity.png");
     //ui->flagLabel->setPixmap(pm);
 
-    ui->flagLabelforDateTime->setStyleSheet("background-image: url('https://www.fine-s.fr/9959/test.jpg');");
+    ui->flagLabelforDateTime->setStyleSheet("background: red;");
 
     //ui->flagLabelforDateTime->setStyleSheet("background-image: url('https://flagcdn.com/16x12/za.png'); background-repeat: no-repeat;");
     //ui->flagLabel->setScaledContents(true);
