@@ -97,7 +97,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     //QPixmap pm("://img/cybcity.png");
     //ui->flagLabel->setPixmap(pm);
-    ui->flagLabelforDateTime->setStyleSheet("background-color: red");
+    ui->flagLabelforDateTime->setStyleSheet("background-image: url('https://flagcdn.com/16x12/za.png'); background-repeat: no-repeat;");
     //ui->flagLabel->setScaledContents(true);
 
     // Definition of the date and time timer to follow current time...
