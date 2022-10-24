@@ -10,6 +10,4 @@ Multi-functional desktop application which can do multiple things with time, wea
 <a name="introduction"></a>
 ## Introduction
 
-## Contents
-
-developed with Qt in C++ 
+## Useful links
