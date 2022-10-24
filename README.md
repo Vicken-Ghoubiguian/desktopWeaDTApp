@@ -4,8 +4,10 @@ Multi-functional desktop application which can do multiple things with time, wea
 
 ## Contents
 
+<a name="presentation"></a>
 ## Presentation
 
+<a name="introduction"></a>
 ## Introduction
 
 ## Contents
