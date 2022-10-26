@@ -7,7 +7,7 @@ Multi-functional desktop application which can do multiple things with time, wea
 <a name="presentation"></a>
 ## Presentation
 
-<name="features"></a>
+<a name="features"></a>
 ### Features
 
 <a name="introduction"></a>
