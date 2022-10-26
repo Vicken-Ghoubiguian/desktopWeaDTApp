@@ -317,7 +317,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Id : " << obj["id"].toInt();
     qDebug() << "Main : " << obj["main"];
     qDebug() << "Name : " << obj["name"].toString();
-    qDebug() << "Sys : " << obj["sys"].toString();
+    qDebug() << "Sys : " << obj["sys"];
     qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
     qDebug() << "Visibility : " << obj["visibility"].toInt();
     qDebug() << "Weather : " << obj["weather"];
