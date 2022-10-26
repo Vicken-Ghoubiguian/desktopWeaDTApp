@@ -302,13 +302,15 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         return;
     }
 
+    //
     if(jsonDocument.isObject() == false) qDebug() << "Not obj...";
 
+    //
     QJsonObject obj = jsonDocument.object();
 
-    QJsonValue codValue = obj.value("cod");
-
-    qDebug() << "Testy 2: " << obj["weather"];
+    qDebug() << obj;
+    qDebug() << "Cod : " << obj["cod"];
+    qDebug() << "Weather : " << obj["weather"];
 
     //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
