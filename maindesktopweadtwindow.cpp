@@ -309,9 +309,13 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     QJsonObject obj = jsonDocument.object();
 
     qDebug() << obj;
+    qDebug() << "Base : " << obj["base"].toString();
+    qDebug() << "Clouds : " << obj["clouds"];
     qDebug() << "Cod : " << obj["cod"].toInt();
     qDebug() << "Coordinates : " << obj["coord"];
     qDebug() << "UTC DateTime : " << obj["dt"].toInt();
+    qDebug() << "Id : " << obj["id"].toInt();
+
     qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
     qDebug() << "Visibility : " << obj["visibility"].toInt();
     qDebug() << "Weather : " << obj["weather"];
