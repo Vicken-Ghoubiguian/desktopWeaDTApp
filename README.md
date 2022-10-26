@@ -10,6 +10,16 @@ Multi-functional desktop application which can do multiple things with time, wea
 <a name="features"></a>
 ### Features
 
+The application developed by this project includes the following features :
+
+*
+
+*
+
+*
+
+*
+
 <a name="introduction"></a>
 ## Introduction
 
