@@ -315,7 +315,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Coordinates : " << obj["coord"];
     qDebug() << "UTC DateTime : " << obj["dt"].toInt();
     qDebug() << "Id : " << obj["id"].toInt();
-
+    qDebug() << "Main : " << obj["main"];
     qDebug() << "Name : " << obj["name"].toString();
     qDebug() << "Sys : " << obj["sys"].toString();
     qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
