@@ -309,7 +309,8 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     QJsonObject obj = jsonDocument.object();
 
     qDebug() << obj;
-    qDebug() << "Cod : " << obj["cod"];
+    qDebug() << "Cod : " << obj["cod"].toInt();
+    qDebug() << "Coordinates : " << obj["coord"];
     qDebug() << "Weather : " << obj["weather"];
 
     //
