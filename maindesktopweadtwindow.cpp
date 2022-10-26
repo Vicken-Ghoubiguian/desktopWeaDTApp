@@ -311,7 +311,12 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << obj;
     qDebug() << "Cod : " << obj["cod"].toInt();
     qDebug() << "Coordinates : " << obj["coord"];
+    qDebug() << "UTC DateTime : " << obj["dt"].toInt();
+    qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
+    qDebug() << "Visibility : " << obj["visibility"].toInt();
     qDebug() << "Weather : " << obj["weather"];
+    qDebug() << "Wind : " << obj["wind"];
+    qDebug() << "\n\n\n\n\n";
 
     //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
