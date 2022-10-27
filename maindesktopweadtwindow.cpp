@@ -333,6 +333,13 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Weather : " << obj["weather"];
     qDebug() << "Weather : " << obj["weather"].isArray();
 
+    QJsonArray dataObject = obj["weather"].toArray();
+    QJsonArray::iterator it;
+    for (it = dataObject.begin(); it != dataObject.end(); it++) {
+            /*QString key = it->first;
+            QString value = it->second;*/
+    }
+
     qDebug() << "Wind : " << obj["wind"];
     qDebug() << "\n\n\n\n\n";
 
