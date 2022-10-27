@@ -329,9 +329,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Sys : " << obj["sys"];
     qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
     qDebug() << "Visibility : " << obj["visibility"].toInt();
-
     qDebug() << "Weather : " << obj["weather"].toArray().at(0);
-
     qDebug() << "Wind : " << obj["wind"];
     qDebug() << "\n\n\n\n\n";
 
