@@ -336,14 +336,11 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     QJsonArray dataObject = obj["weather"].toArray();
     QJsonArray::iterator it;
     for (it = dataObject.begin(); it != dataObject.end(); it++) {
-            /*QString key = it->first;
-            QString value = it->second;*/
+            qDebug() << "it->first";
     }
 
     qDebug() << "Wind : " << obj["wind"];
     qDebug() << "\n\n\n\n\n";
-
-    //QJsonArray test = obj["weather"].toArray();
 
     //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
