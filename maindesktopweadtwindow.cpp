@@ -312,7 +312,16 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Base : " << obj["base"].toString();
     qDebug() << "Clouds : " << obj["clouds"];
     qDebug() << "Cod : " << obj["cod"].toInt();
+
     qDebug() << "Coordinates : " << obj["coord"];
+
+    qDebug() << "Coordinates : " << obj["coord"].isArray();
+    /*QJsonArray::iterator it;
+    for (it = dataObject.begin(); it != dataObject.end(); it++) {
+        QString key = it->first;
+        QString value = it->second;
+    }*/
+
     qDebug() << "UTC DateTime : " << obj["dt"].toInt();
     qDebug() << "Id : " << obj["id"].toInt();
     qDebug() << "Main : " << obj["main"];
@@ -320,7 +329,10 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "Sys : " << obj["sys"];
     qDebug() << "Timezone's offset with UTC : " << obj["timezone"].toInt();
     qDebug() << "Visibility : " << obj["visibility"].toInt();
+
     qDebug() << "Weather : " << obj["weather"];
+    qDebug() << "Weather : " << obj["weather"].isArray();
+
     qDebug() << "Wind : " << obj["wind"];
     qDebug() << "\n\n\n\n\n";
 
