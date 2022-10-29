@@ -13,23 +13,16 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->id = openWeatherObj["id"].toInt();
 
     qDebug() << openWeatherObj;
-
     qDebug() << "Clouds : " << openWeatherObj["clouds"];
-
     qDebug() << "Coordinates : " << openWeatherObj["coord"];
-
-    qDebug() << "Coordinates : " << openWeatherObj["coord"].isArray();
     /*QJsonArray::iterator it;
     for (it = dataObject.begin(); it != dataObject.end(); it++) {
         QString key = it->first;
         QString value = it->second;
     }*/
-
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
     qDebug() << "Weather : " << weatherObj;
-
-    //qDebug() << "Weather : " << openWeatherObj["weather"].toArray().at(0);
     qDebug() << "Wind : " << openWeatherObj["wind"];
     qDebug() << "\n\n\n\n\n";
 
