@@ -1,7 +1,7 @@
 #include "rawweather.h"
 
 //
-RawWeather::RawWeather(QJsonObject openWeatherObj)
+RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 {
     this->cod = openWeatherObj["cod"].toInt();
     this->base = openWeatherObj["base"].toString();
@@ -25,7 +25,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj)
 
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
-    qDebug() << "Weather : " << openWeatherObj["weather"].isArray();
+    qDebug() << "Weather : " << weatherObj;
 
     //qDebug() << "Weather : " << openWeatherObj["weather"].toArray().at(0);
     qDebug() << "Wind : " << openWeatherObj["wind"];

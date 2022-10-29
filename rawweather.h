@@ -11,7 +11,7 @@ class RawWeather
 public:
 
     //
-    RawWeather(QJsonObject openWeatherObj);
+    RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj);
 
     //
     QString toString();
