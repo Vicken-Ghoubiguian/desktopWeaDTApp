@@ -19,6 +19,9 @@ public:
 private:
 
     //
+    QString base;
+
+    //
     int cod;
 
     //
