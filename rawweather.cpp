@@ -1,10 +1,10 @@
 #include "rawweather.h"
 
 //
-RawWeather::RawWeather(int idValue, QString mainValue, QString descriptionValue, QString icon)
+RawWeather::RawWeather(QJsonObject openWeatherObj)
 {
-    this->id = idValue;
+    /*this->id = idValue;
     this->main = mainValue;
     this->description = descriptionValue;
-    this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";
+    this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";*/
 }

@@ -1,7 +1,9 @@
 #ifndef RAWWEATHER_H
 #define RAWWEATHER_H
 
+
 #include <QString>
+#include <QJsonObject>
 
 class RawWeather
 {
@@ -9,7 +11,7 @@ class RawWeather
 public:
 
     //
-    RawWeather(int idValue, QString mainValue, QString descriptionValue, QString icon);
+    RawWeather(QJsonObject openWeatherObj);
 
 private:
 
