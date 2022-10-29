@@ -13,6 +13,9 @@ public:
     //
     RawWeather(QJsonObject openWeatherObj);
 
+    //
+    QString toString();
+
 private:
 
     //

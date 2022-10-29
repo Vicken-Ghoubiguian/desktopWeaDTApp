@@ -8,3 +8,9 @@ RawWeather::RawWeather(QJsonObject openWeatherObj)
     this->description = descriptionValue;
     this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";*/
 }
+
+//
+QString RawWeather::toString() {
+
+    return "";
+}
