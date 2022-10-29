@@ -16,13 +16,22 @@ public:
 private:
 
     //
+    int cod;
+
+    //
+    int utc_dateTime;
+
+    //
     int id;
 
     //
-    QString main;
+    int timezone;
 
     //
-    QString description;
+    int visibility;
+
+    //
+    QString name;
 
     //
     QString iconUrl;
