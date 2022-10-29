@@ -306,10 +306,12 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     if(jsonDocument.isObject() == false) qDebug() << "Not obj...";
 
     //
-    RawWeather currentRawWeather = RawWeather(jsonDocument.object());
+    QJsonObject obj = jsonDocument.object();
 
     //
-    QJsonObject obj = jsonDocument.object();
+    RawWeather currentRawWeather = RawWeather(obj);
+
+    qDebug() << obj["weather"].toArray().at(0);
 
     //
     qDebug() << currentRawWeather.toString();
