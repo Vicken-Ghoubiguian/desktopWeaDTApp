@@ -25,6 +25,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj)
 
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
+    qDebug() << "Weather : " << openWeatherObj["weather"];
     //qDebug() << "Weather : " << openWeatherObj["weather"].toArray().at(0);
     qDebug() << "Wind : " << openWeatherObj["wind"];
     qDebug() << "\n\n\n\n\n";
