@@ -12,6 +12,8 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->visibility = openWeatherObj["visibility"].toInt();
     this->id = openWeatherObj["id"].toInt();
 
+    qDebug() << openWeatherObj;
+
     qDebug() << "Clouds : " << openWeatherObj["clouds"];
 
     qDebug() << "Coordinates : " << openWeatherObj["coord"];
