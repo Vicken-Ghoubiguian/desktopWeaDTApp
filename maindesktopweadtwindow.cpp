@@ -311,24 +311,6 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     //
     QJsonObject obj = jsonDocument.object();
 
-    qDebug() << obj;
-    qDebug() << "Clouds : " << obj["clouds"];
-
-    qDebug() << "Coordinates : " << obj["coord"];
-
-    qDebug() << "Coordinates : " << obj["coord"].isArray();
-    /*QJsonArray::iterator it;
-    for (it = dataObject.begin(); it != dataObject.end(); it++) {
-        QString key = it->first;
-        QString value = it->second;
-    }*/
-
-    qDebug() << "Main : " << obj["main"];
-    qDebug() << "Sys : " << obj["sys"];
-    qDebug() << "Weather : " << obj["weather"].toArray().at(0);
-    qDebug() << "Wind : " << obj["wind"];
-    qDebug() << "\n\n\n\n\n";
-
     //
     qDebug() << currentRawWeather.toString();
 
