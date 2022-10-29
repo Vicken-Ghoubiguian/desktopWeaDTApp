@@ -323,7 +323,6 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         QString value = it->second;
     }*/
 
-    qDebug() << "Id : " << obj["id"].toInt();
     qDebug() << "Main : " << obj["main"];
     qDebug() << "Sys : " << obj["sys"];
     qDebug() << "Weather : " << obj["weather"].toArray().at(0);
