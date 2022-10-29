@@ -15,8 +15,8 @@ SOURCES += \
     humidity.cpp \
     main.cpp \
     maindesktopweadtwindow.cpp \
+    rawweather.cpp \
     weather.cpp \
-    weatherin.cpp \
     wind.cpp
 
 HEADERS += \
@@ -25,8 +25,8 @@ HEADERS += \
     geographiclocation.h \
     humidity.h \
     maindesktopweadtwindow.h \
+    rawweather.h \
     weather.h \
-    weatherin.h \
     wind.h
 
 FORMS += \

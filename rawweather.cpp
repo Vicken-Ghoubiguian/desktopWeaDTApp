@@ -1,7 +1,7 @@
-#include "weatherin.h"
+#include "rawweather.h"
 
 //
-WeatherIn::WeatherIn(int idValue, QString mainValue, QString descriptionValue, QString icon)
+RawWeather::RawWeather(int idValue, QString mainValue, QString descriptionValue, QString icon)
 {
     this->id = idValue;
     this->main = mainValue;

@@ -1,15 +1,15 @@
-#ifndef WEATHERIN_H
-#define WEATHERIN_H
+#ifndef RAWWEATHER_H
+#define RAWWEATHER_H
 
 #include <QString>
 
-class WeatherIn
+class RawWeather
 {
 
 public:
 
     //
-    WeatherIn(int idValue, QString mainValue, QString descriptionValue, QString icon);
+    RawWeather(int idValue, QString mainValue, QString descriptionValue, QString icon);
 
 private:
 
