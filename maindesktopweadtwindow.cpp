@@ -337,6 +337,9 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     qDebug() << "\n\n\n\n\n";
 
     //
+    qDebug() << currentRawWeather.toString();
+
+    //
     ui->weatherTextDisplay->setText(weatherHTTPResult); //+ coordValues.toString());
 }
 
