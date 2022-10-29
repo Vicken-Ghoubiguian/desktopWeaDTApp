@@ -31,7 +31,7 @@ private:
     int id;
 
     //
-    int timezone;
+    int timezone_s_offset_from_utc;
 
     //
     int visibility;
