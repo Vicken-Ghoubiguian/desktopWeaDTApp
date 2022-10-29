@@ -323,11 +323,9 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         QString value = it->second;
     }*/
 
-    qDebug() << "UTC DateTime : " << obj["dt"].toInt();
     qDebug() << "Id : " << obj["id"].toInt();
     qDebug() << "Main : " << obj["main"];
     qDebug() << "Sys : " << obj["sys"];
-    qDebug() << "Visibility : " << obj["visibility"].toInt();
     qDebug() << "Weather : " << obj["weather"].toArray().at(0);
     qDebug() << "Wind : " << obj["wind"];
     qDebug() << "\n\n\n\n\n";

@@ -8,6 +8,9 @@ RawWeather::RawWeather(QJsonObject openWeatherObj)
     this->id = openWeatherObj["id"].toInt();
     this->timezone_s_offset_from_utc = openWeatherObj["timezone"].toInt();
     this->location_name = openWeatherObj["name"].toString();
+    this->utc_dateTime = openWeatherObj["dt"].toInt();
+    this->visibility = openWeatherObj["visibility"].toInt();
+    this->id = openWeatherObj["id"].toInt();
 
     /*this->id = idValue;
     this->main = mainValue;
