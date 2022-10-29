@@ -34,7 +34,7 @@ private:
     int visibility;
 
     //
-    QString name;
+    QString location_name;
 
     //
     QString iconUrl;

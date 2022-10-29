@@ -13,6 +13,8 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
+#include <rawweather.h>
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
 QT_END_NAMESPACE
