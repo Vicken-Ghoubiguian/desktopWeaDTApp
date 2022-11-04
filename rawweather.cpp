@@ -23,10 +23,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     qDebug() << "Wind : " << openWeatherObj["wind"];
     qDebug() << "\n\n\n\n\n";
 
-    /*this->id = idValue;
-    this->main = mainValue;
-    this->description = descriptionValue;
-    this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";*/
+    //this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";
 }
 
 //
