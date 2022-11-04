@@ -30,6 +30,9 @@ private:
     //Coordinates cords;
 
     //
+    double clouds;
+
+    //
     int utc_dateTime;
 
     //

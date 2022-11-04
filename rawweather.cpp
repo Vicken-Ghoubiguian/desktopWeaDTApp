@@ -10,11 +10,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->location_name = openWeatherObj["name"].toString();
     this->utc_dateTime = openWeatherObj["dt"].toInt();
     this->visibility = openWeatherObj["visibility"].toInt();
-    this->id = openWeatherObj["id"].toInt();
-
-    qDebug() << "Clouds : " << openWeatherObj["clouds"];
-
-    qDebug() << "Clouds : " << openWeatherObj["clouds"].toObject().take("all").toDouble();
+    this->clouds = openWeatherObj["clouds"].toObject().take("all").toDouble();
 
     Coordinates cords(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
     //this->cords = cords;
