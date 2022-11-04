@@ -15,6 +15,9 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     qDebug() << openWeatherObj;
     qDebug() << "Clouds : " << openWeatherObj["clouds"];
     qDebug() << "Coordinates : " << openWeatherObj["coord"];
+
+    qDebug() << "Coordinates : " << openWeatherObj["coord"].toString();
+
     /*QJsonArray::iterator it;
     for (it = dataObject.begin(); it != dataObject.end(); it++) {
         QString key = it->first;
