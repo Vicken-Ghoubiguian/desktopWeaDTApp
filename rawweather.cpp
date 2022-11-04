@@ -16,7 +16,8 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     qDebug() << "Clouds : " << openWeatherObj["clouds"];
     qDebug() << "Coordinates : " << openWeatherObj["coord"];
 
-    qDebug() << "Coordinates : " << openWeatherObj["coord"].toString();
+    qDebug() << "Coordinates (latitude) : " << openWeatherObj["coord"].toObject().take("lat");
+    qDebug() << "Coordinates (longitude) : " << openWeatherObj["coord"].toObject().take("lon");
 
     /*QJsonArray::iterator it;
     for (it = dataObject.begin(); it != dataObject.end(); it++) {
