@@ -3,6 +3,7 @@
 //
 RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 {
+    //
     this->cod = openWeatherObj["cod"].toInt();
     this->base = openWeatherObj["base"].toString();
     this->id = openWeatherObj["id"].toInt();
@@ -12,6 +13,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->visibility = openWeatherObj["visibility"].toInt();
     this->clouds = openWeatherObj["clouds"].toObject().take("all").toDouble();
 
+    //
     Coordinates cords(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
     //this->cords = cords;
 
