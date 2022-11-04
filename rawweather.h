@@ -27,7 +27,7 @@ private:
     int cod;
 
     //
-    Coordinates cords;
+    //Coordinates cords;
 
     //
     int utc_dateTime;
