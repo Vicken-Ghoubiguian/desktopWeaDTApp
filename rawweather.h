@@ -5,6 +5,8 @@
 #include <QString>
 #include <QJsonObject>
 
+#include "coordinates.h"
+
 class RawWeather
 {
 
@@ -23,6 +25,9 @@ private:
 
     //
     int cod;
+
+    //
+    Coordinates cords;
 
     //
     int utc_dateTime;
