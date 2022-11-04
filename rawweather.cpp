@@ -30,5 +30,5 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 //
 QString RawWeather::toString() {
 
-    return "";
+    return "Coordinates (longitude, latitude) : ";
 }
