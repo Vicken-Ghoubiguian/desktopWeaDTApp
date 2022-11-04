@@ -12,14 +12,14 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->visibility = openWeatherObj["visibility"].toInt();
     this->id = openWeatherObj["id"].toInt();
 
-    qDebug() << openWeatherObj;
-
     qDebug() << "Clouds : " << openWeatherObj["clouds"];
 
     qDebug() << "Clouds : " << openWeatherObj["clouds"].toObject().take("all").toDouble();
 
     Coordinates cords(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
     this->cords = cords;
+
+    qDebug() << openWeatherObj;
 
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
