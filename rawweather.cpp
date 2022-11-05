@@ -23,7 +23,6 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
-    qDebug() << "Weather : " << weatherObj;
     qDebug() << "Wind : " << openWeatherObj["wind"];
     qDebug() << "\n\n\n\n\n";
 
