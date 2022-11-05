@@ -1,9 +1,9 @@
 #include "wind.h"
 
 //
-Wind::Wind(double wishedSpeed, int wishedDeg, double wishedGust)
+Wind::Wind(double speed, int deg, double gust)
 {
-    this->windSpeed = wishedSpeed;
-    this->windDeg = wishedDeg;
-    this->windGust = wishedGust;
+    this->speed = speed;
+    this->deg = deg;
+    this->gust = gust;
 }

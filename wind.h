@@ -8,18 +8,18 @@ class Wind
 public:
 
     //
-    Wind(double wishedSpeed, int wishedDeg, double wishedGust);
+    Wind(double speed, int deg, double gust);
 
 private:
 
     //
-    double windSpeed;
+    double speed;
 
     //
-    double windDeg;
+    double deg;
 
     //
-    double windGust;
+    double gust;
 };
 
 #endif // WIND_H
