@@ -10,6 +10,15 @@ public:
     //
     Wind(double speed, int deg, double gust);
 
+    //
+    double getSpeed();
+
+    //
+    double getDeg();
+
+    //
+    double getGust();
+
 private:
 
     //
