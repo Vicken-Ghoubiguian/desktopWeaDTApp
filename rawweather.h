@@ -6,6 +6,7 @@
 #include <QJsonObject>
 
 #include "coordinates.h"
+#include "weather.h"
 
 class RawWeather
 {
@@ -27,7 +28,9 @@ private:
     int cod;
 
     //
-    //Coordinates *cords;
+    //Coordinates cords;
+
+    //Weather w;
 
     //
     double clouds;
