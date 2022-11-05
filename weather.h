@@ -12,6 +12,21 @@ public:
     //
     Weather(QString description, QString icon, int id, QString main);
 
+    //
+    QString getDescription();
+
+    //
+    QString getIcon();
+
+    //
+    int getId();
+
+    //
+    QString getMain();
+
+    //
+    QString toString();
+
 private:
 
     //
