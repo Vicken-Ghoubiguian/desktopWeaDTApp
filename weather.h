@@ -15,7 +15,16 @@ public:
 private:
 
     //
+    QString description;
 
+    //
+    QString icon;
+
+    //
+    int id;
+
+    //
+    QString main;
 
 };
 
