@@ -10,7 +10,7 @@ class Weather : public QObject
 public:
 
     //
-    explicit Weather(QObject *parent = nullptr);
+    Weather(QString description, QString icon, int id, QString main);
 
 private:
 

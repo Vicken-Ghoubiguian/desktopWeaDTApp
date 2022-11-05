@@ -1,7 +1,7 @@
 #include "weather.h"
 
 //
-Weather::Weather(QObject *parent) : QObject(parent)
+Weather::Weather(QString description, QString icon, int id, QString main)
 {
 
 }
