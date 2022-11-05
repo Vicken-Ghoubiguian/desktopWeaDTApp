@@ -11,6 +11,9 @@ public:
     Wind(double speed, int deg, double gust);
 
     //
+    Wind(double speed, int deg);
+
+    //
     double getSpeed();
 
     //

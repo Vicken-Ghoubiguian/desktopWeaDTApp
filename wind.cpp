@@ -9,6 +9,13 @@ Wind::Wind(double speed, int deg, double gust)
 }
 
 //
+Wind::Wind(double speed, int deg)
+{
+    this->speed = speed;
+    this->deg = deg;
+}
+
+//
 double Wind::getSpeed()
 {
     return this->speed;
