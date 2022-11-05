@@ -7,6 +7,7 @@
 
 #include "coordinates.h"
 #include "weather.h"
+#include "wind.h"
 
 class RawWeather
 {
