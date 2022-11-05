@@ -312,7 +312,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     RawWeather currentRawWeather = RawWeather(obj, obj["weather"].toArray().at(0));
 
     //
-    ui->weatherTextDisplay->setText(currentRawWeather.toString());
+    ui->weatherTextDisplay->setText("currentRawWeather.toString()");
 }
 
 //
