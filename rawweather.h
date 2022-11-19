@@ -18,8 +18,10 @@ public:
     RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj);
 
     //
+    Coordinates getCoords();
 
     //
+    Weather getWeather();
 
     //
 
