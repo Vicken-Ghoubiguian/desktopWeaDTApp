@@ -73,8 +73,9 @@ int RawWeather::getCod() {
 QString RawWeather::toString() {
 
     //
-    return "UTC datetime: " + QString::number(utc_dateTime) + "\n" +
+    return "UTC datetime: " + QString::number(this->utc_dateTime) + "\n" +
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
+           "Datetime from location: " + QString::number(this->utc_dateTime + this->timezone_s_offset_from_utc) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
            "Location's name: " + this->location_name + "\n" +
            "Returning code : " + QString::number(this->cod) + "\n";
