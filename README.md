@@ -8,6 +8,7 @@ Multi-functional desktop application which can do multiple things with time, wea
    * [Features](#features)   
 * [Introduction](#introduction),
 * [Useful links](#useful_links),
+* [Conclusion](#conclusion)
 
 <a name="presentation"></a>
 ## Presentation
@@ -30,3 +31,6 @@ The application developed by this project includes the following features :
 
 <a name="useful_links"></a>
 ## Useful links
+
+<a name="conclusion"></a>
+## Conclusion
