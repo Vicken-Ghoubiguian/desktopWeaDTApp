@@ -16,6 +16,7 @@ SOURCES += \
     main.cpp \
     maindesktopweadtwindow.cpp \
     rawweather.cpp \
+    sys.cpp \
     weather.cpp \
     wind.cpp
 
@@ -26,6 +27,7 @@ HEADERS += \
     humidity.h \
     maindesktopweadtwindow.h \
     rawweather.h \
+    sys.h \
     weather.h \
     wind.h
 
