@@ -4,7 +4,9 @@ Multi-functional desktop application which can do multiple things with time, wea
 
 ## Contents
 
+* [Presentation](#presentation),
 * [Introduction](#introduction),
+* [Useful links](#useful_links),
 
 <a name="presentation"></a>
 ## Presentation
