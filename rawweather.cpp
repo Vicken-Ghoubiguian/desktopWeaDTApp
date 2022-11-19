@@ -33,8 +33,46 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 }
 
 //
+
+//
+int RawWeather::getUTCDateTime() {
+
+    //
+    return this->utc_dateTime;
+}
+
+//
+int RawWeather::getOffsetFromUTC() {
+
+    //
+    return this->timezone_s_offset_from_utc;
+}
+
+//
+int RawWeather::getId() {
+
+    //
+    return this->id;
+}
+
+//
+QString RawWeather::getLocationSName() {
+
+    //
+    return this->location_name;
+}
+
+//
+int RawWeather::getCod() {
+
+    //
+    return this->cod;
+}
+
+//
 QString RawWeather::toString() {
 
+    //
     return "UTC datetime: " + QString::number(utc_dateTime) + "\n" +
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
