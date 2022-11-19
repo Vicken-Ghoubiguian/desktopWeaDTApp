@@ -26,12 +26,19 @@ public:
     //
 
     //
+    int getUTCDateTime();
 
     //
+    int getOffsetFromUTC();
 
     //
+    int getId();
 
     //
+    QString getLocationSName();
+
+    //
+    int getCod();
 
     //
     QString toString();
