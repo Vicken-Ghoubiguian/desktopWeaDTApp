@@ -39,6 +39,5 @@ QString RawWeather::toString() {
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
            "Location's name: " + this->location_name + "" +
-           "Returning code : " + QString::number(this->cod) + "\n" +
-           "";
+           "Returning code : " + QString::number(this->cod) + "\n";
 }
