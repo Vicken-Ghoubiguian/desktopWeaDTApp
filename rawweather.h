@@ -18,6 +18,20 @@ public:
     RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj);
 
     //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
     QString toString();
 
 private:
