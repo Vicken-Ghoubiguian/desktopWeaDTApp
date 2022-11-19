@@ -5,7 +5,7 @@ Multi-functional desktop application which can do multiple things with time, wea
 ## Contents
 
 * [Presentation](#presentation),
-   * [Features](#features)   
+* [Features](#features),
 * [Introduction](#introduction),
 * [Useful links](#useful_links),
 * [Conclusion](#conclusion)
@@ -14,7 +14,7 @@ Multi-functional desktop application which can do multiple things with time, wea
 ## Presentation
 
 <a name="features"></a>
-### Features
+## Features
 
 The application developed by this project includes the following features :
 
