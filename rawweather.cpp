@@ -35,5 +35,8 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 //
 QString RawWeather::toString() {
 
-    return "Coordinates (longitude, latitude) : ";
+    return "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
+           "Id: " + QString::number(this->id) + "\n" +
+           "Returning code : " + QString::number(this->cod) + "\n" +
+           "";
 }
