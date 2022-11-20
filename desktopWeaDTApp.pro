@@ -34,9 +34,11 @@ HEADERS += \
 FORMS += \
     maindesktopweadtwindow.ui
 
+#
 RESOURCES.files = \
     img\cybcity.png
 
+# Defines the logo of the application for a Windows type operating system...
 win32:RC_ICONS += img\cybcity.ico
 
 RESOURCES.prefix = /
