@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/ressources">
         <file>img/cybcity.png</file>
+        <file>img/cybcity.ico</file>
     </qresource>
 </RCC>

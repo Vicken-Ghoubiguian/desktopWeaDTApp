@@ -37,6 +37,8 @@ FORMS += \
 RESOURCES.files = \
     img\cybcity.png
 
+win32:RC_ICONS += img\cybcity.ico
+
 RESOURCES.prefix = /
 
 RESOURCES += \
