@@ -91,8 +91,13 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     // Definition of the application's (and main window's too) fixed size...
     this->setFixedSize(840, 600);
 
-    // Defines the logo of the application for a Windows type operating system...
-    setWindowIcon(QIcon(":/img/cybcity.ico"));
+    //
+    if(QSysInfo::productType() == "windows")
+    {
+        // Defines the logo of the application for a Windows type operating system...
+        setWindowIcon(QIcon(":/img/cybcity.ico"));
+
+    }
 
     //
     //this->setWindowIcon(QIcon("://img/cybcity.png"));
