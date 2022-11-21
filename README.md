@@ -8,10 +8,10 @@ Multi-functional desktop application which can do multiple things with time, wea
 * [Features](#features),
 * [Introduction](#introduction),
 * [Deployment](#deployment),
-  *
-  *
-  *
-  *
+  * [Generation of executable file](#generation_executable_file),
+  * [On Windows](#on_windows),
+  * [On Linux](#on_linux),
+  * [On Mac](#on_mac),
 * [Useful links](#useful_links),
 * [Conclusion](#conclusion)
 
