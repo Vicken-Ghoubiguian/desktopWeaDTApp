@@ -98,6 +98,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
         setWindowIcon(QIcon(":/img/cybcity.ico"));
 
     }
+    //
+    else
+    {
+        //
+        setWindowIcon(QIcon(":/img/cybcity.png"));
+    }
 
     //
     //this->setWindowIcon(QIcon("://img/cybcity.png"));
