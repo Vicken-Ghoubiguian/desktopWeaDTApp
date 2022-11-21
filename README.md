@@ -7,6 +7,11 @@ Multi-functional desktop application which can do multiple things with time, wea
 * [Presentation](#presentation),
 * [Features](#features),
 * [Introduction](#introduction),
+* [Deployment](#deployment),
+  *
+  *
+  *
+  *
 * [Useful links](#useful_links),
 * [Conclusion](#conclusion)
 
