@@ -34,6 +34,21 @@ The application developed by this project includes the following features :
 <a name="introduction"></a>
 ## Introduction
 
+<a name="deployment"></a>
+## Deployment
+
+<a name="generation_executable_file"></a>
+### Generation of executable file
+
+<a name="on_windows"></a>
+### On Windows
+
+<a name="on_linux"></a>
+### On Linux
+
+<a name="on_mac"></a>
+### On Mac
+
 <a name="useful_links"></a>
 ## Useful links
 
