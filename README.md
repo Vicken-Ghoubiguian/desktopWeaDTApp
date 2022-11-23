@@ -35,6 +35,9 @@ The application developed by this project includes the following features :
 <a name="introduction"></a>
 ## Introduction
 
+<a name="development"></a>
+## Development
+
 <a name="deployment"></a>
 ## Deployment
 
