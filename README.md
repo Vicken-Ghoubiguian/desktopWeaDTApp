@@ -39,6 +39,9 @@ The application developed by this project includes the following features :
 <a name="development"></a>
 ## Development
 
+<a name="used_technologies"></a>
+## Used technologies
+
 <a name="deployment"></a>
 ## Deployment
 
