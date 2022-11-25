@@ -33,6 +33,11 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 }
 
 //
+Coordinates* RawWeather::getCoords() {
+
+    //
+    return this->cords;
+}
 
 //
 int RawWeather::getUTCDateTime() {
