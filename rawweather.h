@@ -42,6 +42,9 @@ public:
     int getCod();
 
     //
+    Wind* getWind();
+
+    //
     UltraViolet* getUltraViolet();
 
     //
@@ -81,6 +84,9 @@ private:
 
     //
     QString iconUrl;
+
+    //
+    Wind* wind;
 
     //
     UltraViolet* UV;

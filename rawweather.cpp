@@ -82,6 +82,13 @@ int RawWeather::getCod() {
 }
 
 //
+Wind* RawWeather::getWind() {
+
+    //
+    return this->wind;
+}
+
+//
 UltraViolet* RawWeather::getUltraViolet() {
 
     //
