@@ -77,6 +77,9 @@ private:
 
     //
     QString iconUrl;
+
+    //
+    //UltraViolet UV;
 };
 
 #endif // WEATHERIN_H
