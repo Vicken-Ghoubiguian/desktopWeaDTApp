@@ -7,6 +7,13 @@ Multi-functional desktop application which can do multiple things with time, wea
 * [Presentation](#presentation),
 * [Features](#features),
 * [Introduction](#introduction),
+* [Development](#development),
+* [Used technologies](#used_technologies),
+* [Deployment](#deployment),
+  * [Generation of executable file](#generation_executable_file),
+  * [On Windows](#on_windows),
+  * [On Linux](#on_linux),
+  * [On Mac](#on_mac),
 * [Useful links](#useful_links),
 * [Conclusion](#conclusion)
 
@@ -28,6 +35,27 @@ The application developed by this project includes the following features :
 
 <a name="introduction"></a>
 ## Introduction
+
+<a name="development"></a>
+## Development
+
+<a name="used_technologies"></a>
+## Used technologies
+
+<a name="deployment"></a>
+## Deployment
+
+<a name="generation_executable_file"></a>
+### Generation of executable file
+
+<a name="on_windows"></a>
+### On Windows
+
+<a name="on_linux"></a>
+### On Linux
+
+<a name="on_mac"></a>
+### On Mac
 
 <a name="useful_links"></a>
 ## Useful links
