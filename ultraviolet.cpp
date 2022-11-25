@@ -1,8 +1,13 @@
 #include "ultraviolet.h"
 
-UltraViolet::UltraViolet()
+UltraViolet::UltraViolet(int value)
 {
 
+    //
+
+
+    //
+    this->index = value;
 }
 
 int UltraViolet::getIndex()

@@ -9,7 +9,7 @@ class UltraViolet
 public:
 
     //
-    UltraViolet();
+    UltraViolet(int value);
 
     //
     int getIndex();
