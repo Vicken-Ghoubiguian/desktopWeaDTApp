@@ -53,9 +53,10 @@ private:
     int cod;
 
     //
-    //Coordinates cords;
+    Coordinates* cords;
 
-    //Weather w;
+    //
+    Weather* weather;
 
     //
     double clouds;
@@ -79,7 +80,7 @@ private:
     QString iconUrl;
 
     //
-    //UltraViolet UV;
+    UltraViolet* UV;
 };
 
 #endif // WEATHERIN_H
