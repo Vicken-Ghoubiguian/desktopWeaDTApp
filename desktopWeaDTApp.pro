@@ -30,6 +30,7 @@ HEADERS += \
     rawweather.h \
     sys.h \
     ultraviolet.h \
+    ultravioletrisk.h \
     weather.h \
     wind.h
 
