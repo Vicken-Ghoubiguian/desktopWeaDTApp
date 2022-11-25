@@ -40,6 +40,13 @@ Coordinates* RawWeather::getCoords() {
 }
 
 //
+Weather* RawWeather::getWeather() {
+
+    //
+    return this->weather;
+}
+
+//
 int RawWeather::getUTCDateTime() {
 
     //

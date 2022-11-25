@@ -22,7 +22,7 @@ public:
     Coordinates* getCoords();
 
     //
-    Weather getWeather();
+    Weather* getWeather();
 
     //
 
