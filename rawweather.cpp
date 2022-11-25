@@ -70,6 +70,13 @@ int RawWeather::getCod() {
 }
 
 //
+UltraViolet* RawWeather::getUltraViolet() {
+
+    //
+    return this->UV;
+}
+
+//
 QString RawWeather::toString() {
 
     //

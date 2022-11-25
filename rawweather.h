@@ -42,6 +42,9 @@ public:
     int getCod();
 
     //
+    UltraViolet* getUltraViolet();
+
+    //
     QString toString();
 
 private:
