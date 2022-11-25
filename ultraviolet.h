@@ -14,10 +14,16 @@ public:
     //
     int getIndex();
 
+    //
+    UltraVioletRisk getRisk();
+
 private:
 
     //
     int index;
+
+    //
+    UltraVioletRisk risk;
 };
 
 #endif // ULTRAVIOLET_H

@@ -11,3 +11,10 @@ int UltraViolet::getIndex()
     //
     return this->index;
 }
+
+UltraVioletRisk UltraViolet::getRisk()
+{
+
+    //
+    return this->risk;
+}
