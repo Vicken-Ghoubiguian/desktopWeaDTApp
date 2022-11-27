@@ -22,5 +22,5 @@ double Coordinates::getLatitude()
 //
 QString Coordinates::toString()
 {
-    return "";
+    return "(" + QString::number(this->latitude) + ", " + QString::number(this->longitude) + ")";
 }
