@@ -59,7 +59,7 @@ private:
     int cod;
 
     //
-    Coordinates* cords;
+    Coordinates* coords;
 
     //
     Weather* weather;
