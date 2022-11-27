@@ -14,10 +14,11 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->clouds = openWeatherObj["clouds"].toObject().take("all").toDouble();
 
     //
-    //this->coords
+    //
 
     //
-    Coordinates coords(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
+    Coordinates* coords = new Coordinates(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
+    this->coords = coords;
 
     //
     Weather weather(weatherObj.toObject().take("description").toString(), weatherObj.toObject().take("icon").toString(), weatherObj.toObject().take("id").toInt(), weatherObj.toObject().take("main").toString());
