@@ -101,7 +101,8 @@ UltraViolet* RawWeather::getUltraViolet() {
 QString RawWeather::toString() {
 
     //
-    return "Base: " + this->base + "\n" +
+    return "Coordinates: " + this->coords->toString() + "\n" +
+           "Base: " + this->base + "\n" +
            "UTC datetime: " + QString::number(this->utc_dateTime) + "\n" +
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
            "Datetime from location: " + QString::number(this->utc_dateTime + this->timezone_s_offset_from_utc) + "\n" +
