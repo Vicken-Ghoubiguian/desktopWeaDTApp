@@ -23,7 +23,6 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 
     qDebug() << "Main : " << openWeatherObj["main"];
     qDebug() << "Sys : " << openWeatherObj["sys"];
-    qDebug() << "Wind : " << openWeatherObj["wind"];
     qDebug() << "\n";
 
     //this->iconUrl = "https://openweathermap.org/img/wn/" + icon + ".png";
