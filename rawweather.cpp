@@ -105,9 +105,9 @@ QString RawWeather::toString() {
     //
     return "Coordinates: " + this->coords->toString() + "\n" +
            "Base: " + this->base + "\n" +
-           "UTC datetime: " + QString::number(this->utc_dateTime) + "\n" +
+           "UTC datetime (in seconds): " + QString::number(this->utc_dateTime) + "\n" +
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
-           "Datetime from location: " + QString::number(this->corresponding_tz_datetime) + "\n" +
+           "Datetime from location (in seconds): " + QString::number(this->corresponding_tz_datetime) + "\n" +
            "Visibility: " + QString::number(this->visibility) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
            "Location's name: " + this->location_name + "\n" +
