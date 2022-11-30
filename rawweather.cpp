@@ -21,9 +21,6 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     //
     Weather weather(weatherObj.toObject().take("description").toString(), weatherObj.toObject().take("icon").toString(), weatherObj.toObject().take("id").toInt(), weatherObj.toObject().take("main").toString());
 
-    //
-    //Wind wind();
-
     qDebug() << openWeatherObj;
 
     qDebug() << "Main : " << openWeatherObj["main"];
