@@ -31,7 +31,7 @@ QString Weather::getMain()
 }
 
 //
-QString toString()
+QString Weather::toString()
 {
     return "";
 }
