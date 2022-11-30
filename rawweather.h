@@ -45,6 +45,9 @@ public:
     Wind* getWind();
 
     //
+    int getCorrespondingTZDateTime();
+
+    //
     UltraViolet* getUltraViolet();
 
     //
