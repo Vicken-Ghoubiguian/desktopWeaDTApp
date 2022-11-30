@@ -12,6 +12,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->utc_dateTime = openWeatherObj["dt"].toInt();
     this->visibility = openWeatherObj["visibility"].toInt();
     this->clouds = openWeatherObj["clouds"].toObject().take("all").toDouble();
+    this->corresponding_tz_datetime = openWeatherObj["dt"].toInt() + openWeatherObj["timezone"].toInt();
 
     //
     this->coords = new Coordinates(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());

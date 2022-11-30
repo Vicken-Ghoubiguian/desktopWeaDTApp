@@ -89,6 +89,9 @@ private:
     Wind* wind;
 
     //
+    int corresponding_tz_datetime;
+
+    //
     UltraViolet* UV;
 };
 
