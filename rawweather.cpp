@@ -86,6 +86,13 @@ Wind* RawWeather::getWind() {
 }
 
 //
+int RawWeather::getCorrespondingTZDateTime() {
+
+    //
+    return this->corresponding_tz_datetime;
+}
+
+//
 UltraViolet* RawWeather::getUltraViolet() {
 
     //
