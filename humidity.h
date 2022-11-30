@@ -11,6 +11,9 @@ public:
     //
     Humidity(int humidityValue);
 
+    //
+    QString toString();
+
 private:
 
     //
