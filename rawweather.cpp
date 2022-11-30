@@ -15,11 +15,9 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
 
     //
     this->coords = new Coordinates(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
+    this->weather = new Weather(weatherObj.toObject().take("description").toString(), weatherObj.toObject().take("icon").toString(), weatherObj.toObject().take("id").toInt(), weatherObj.toObject().take("main").toString());
 
     this->wind = new Wind(openWeatherObj["wind"].toObject().take("speed").toDouble(), openWeatherObj["wind"].toObject().take("deg").toInt());
-
-    //
-    Weather weather(weatherObj.toObject().take("description").toString(), weatherObj.toObject().take("icon").toString(), weatherObj.toObject().take("id").toInt(), weatherObj.toObject().take("main").toString());
 
     qDebug() << openWeatherObj;
 
