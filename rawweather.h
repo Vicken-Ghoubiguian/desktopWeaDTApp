@@ -1,7 +1,6 @@
 #ifndef RAWWEATHER_H
 #define RAWWEATHER_H
 
-
 #include <QString>
 #include <QJsonObject>
 

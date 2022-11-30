@@ -32,3 +32,9 @@ double Wind::getGust()
 {
     return this->gust;
 }
+
+//
+QString Wind::toString()
+{
+    return "";
+}

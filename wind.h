@@ -1,6 +1,7 @@
 #ifndef WIND_H
 #define WIND_H
 
+#include <QString>
 
 class Wind
 {
@@ -21,6 +22,9 @@ public:
 
     //
     double getGust();
+
+    //
+    QString toString();
 
 private:
 
