@@ -36,5 +36,8 @@ QString Weather::getMain()
 //
 QString Weather::toString()
 {
-    return "icon: " + this->icon;
+    return "Description: " + this->description + "\n" +
+           "Icon: " + this->icon + "\n" +
+            "Id: " + QString::number(this->id) + "\n" +
+            "Main: " + this->main;
 }
