@@ -106,14 +106,13 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     }
 
     //
-    //this->setWindowIcon(QIcon("://img/cybcity.png"));
-
-    //
-    //QPixmap pm("://img/cybcity.png");
+    QPixmap pm("https://flagcdn.com/w40/za.png");
     //ui->flagLabel->setPixmap(pm);
 
-    ui->flagLabelforDateTime->setStyleSheet("background: red;");
+    //ui->flagLabelforDateTime->setStyleSheet("background: red;");
     //ui->flagLabelforDateTime->setStyleSheet("background: 'https://flagcdn.com/w40/za.png';");
+    ui->flagLabelforDateTime->setPixmap(pm);
+    ui->flagLabelforDateTime->setMask(pm.mask());
 
     //ui->flagLabelforDateTime->setStyleSheet("background-image: url('https://flagcdn.com/16x12/za.png'); background-repeat: no-repeat;");
     //ui->flagLabel->setScaledContents(true);
