@@ -60,5 +60,7 @@ The application developed by this project includes the following features :
 <a name="useful_links"></a>
 ## Useful links
 
+* [Weather Conditions - OpenWeatherMap](https://openweathermap.org/weather-conditions),
+
 <a name="conclusion"></a>
 ## Conclusion
