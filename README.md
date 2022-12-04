@@ -60,6 +60,7 @@ The application developed by this project includes the following features :
 <a name="useful_links"></a>
 ## Useful links
 
+* [OpenWeatherMap API (Current weather data) - OpenWeatherMap](https://openweathermap.org/current),
 * [Weather Conditions - OpenWeatherMap](https://openweathermap.org/weather-conditions),
 
 <a name="conclusion"></a>
