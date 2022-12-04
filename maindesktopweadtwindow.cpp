@@ -113,6 +113,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //ui->flagLabel->setPixmap(pm);
 
     ui->flagLabelforDateTime->setStyleSheet("background: red;");
+    //ui->flagLabelforDateTime->setStyleSheet("background: 'https://flagcdn.com/w40/za.png';");
 
     //ui->flagLabelforDateTime->setStyleSheet("background-image: url('https://flagcdn.com/16x12/za.png'); background-repeat: no-repeat;");
     //ui->flagLabel->setScaledContents(true);
