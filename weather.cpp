@@ -4,7 +4,7 @@
 Weather::Weather(QString description, QString icon, int id, QString main)
 {
     this->description = description;
-    this->icon = icon;
+    this->icon = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
     this->id = id;
     this->main = main;
 }
