@@ -107,6 +107,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     //
     QPixmap pm("https://flagcdn.com/w40/za.png");
+    pm = pm.scaled(ui->flagLabelforDateTime->size(),Qt::KeepAspectRatio);
     //ui->flagLabel->setPixmap(pm);
 
     //ui->flagLabelforDateTime->setStyleSheet("background: red;");

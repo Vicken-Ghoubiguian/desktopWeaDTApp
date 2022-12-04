@@ -3,7 +3,10 @@
 //
 Weather::Weather(QString description, QString icon, int id, QString main)
 {
-
+    this->description = description;
+    this->icon = icon;
+    this->id = id;
+    this->main = main;
 }
 
 //
