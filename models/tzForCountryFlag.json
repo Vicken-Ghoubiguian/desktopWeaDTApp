@@ -41,5 +41,17 @@
     "Asia/Seoul": "kr",
     "Asia/Singapore": "sg",
     "Asia/Riyadh": "sa",
-    "Asia/Qatar": "qa"
+    "Asia/Qatar": "qa",
+    "Asia/Samarkand": "uz",
+    "Asia/Tashkent": "uz",
+    "Asia/Taipei": "tw",
+    "Asia/Tbilisi": "ge",
+    "Asia/Tehran": "ir",
+    "Asia/Thimphu": "bt",
+    "Asia/Tokyo": "jp",
+    "Asia/Ulaanbaatar": "mn",
+    "Asia/Choibalsan": "mn",
+    "Asia/Hovd": "mn",
+    "Asia/Yangon": "mm",
+    "Asia/Yerevan": "am"
 }
