@@ -9,6 +9,9 @@ class UltraViolet
 public:
 
     //
+    UltraViolet(double longitude, double latitude);
+
+    //
     UltraViolet(int value);
 
     //

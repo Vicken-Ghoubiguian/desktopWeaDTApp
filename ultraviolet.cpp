@@ -1,5 +1,10 @@
 #include "ultraviolet.h"
 
+UltraViolet::UltraViolet(double longitude, double latitude)
+{
+
+}
+
 UltraViolet::UltraViolet(int value)
 {
 
