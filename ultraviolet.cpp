@@ -3,6 +3,45 @@
 UltraViolet::UltraViolet(double longitude, double latitude)
 {
 
+    int value = 0;
+
+    //
+    if(value <= 2) {
+
+        //
+        this->risk = Low;
+    }
+
+    //
+    else if (3 <= value && value <= 5) {
+
+        //
+        this->risk = Moderate;
+    }
+
+    //
+    else if (6 <= value && value <= 7) {
+
+        //
+        this->risk = High;
+    }
+
+    //
+    else if(8 <= value && value <= 10) {
+
+        //
+        this->risk = Very_High;
+    }
+
+    //
+    else {
+
+        //
+        this->risk = Extreme;
+    }
+
+    //
+    this->index = value;
 }
 
 UltraViolet::UltraViolet(int value)
