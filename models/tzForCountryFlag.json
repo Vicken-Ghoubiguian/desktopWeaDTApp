@@ -37,9 +37,9 @@
 
     "Asia/Urumqi": "cn",
     "Asia/Shanghai": "cn",
-    "Asia/Pyongyang": "KP",
-    "Asia/Seoul": "KR",
-    "Asia/Singapore": "SG",
-    "Asia/Riyadh": "SA",
-    "Asia/Qatar": "QA"
+    "Asia/Pyongyang": "kp",
+    "Asia/Seoul": "kr",
+    "Asia/Singapore": "sg",
+    "Asia/Riyadh": "sa",
+    "Asia/Qatar": "qa"
 }
