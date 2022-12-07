@@ -51,6 +51,9 @@ private slots:
     void updateDisplayedTimeForSpecificTimeZone();
 
     //
+    void updateDisplayedCountryFlagForSpecificTimeZone();
+
+    //
     void resetInputsForWeather();
 
     //

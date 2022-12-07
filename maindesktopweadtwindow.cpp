@@ -132,6 +132,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
 
     // Definition of all 'connects' functions used in this class...
     connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
+    connect(ui->comboBoxOfIANATimezones, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedCountryFlagForSpecificTimeZone()));
     connect(ui->comboBoxDateAndTimeFormats, SIGNAL(currentIndexChanged(int)), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(this->dateTimeTimer, SIGNAL(timeout()), this, SLOT(updateDisplayedTimeForSpecificTimeZone()));
     connect(ui->resetButton, SIGNAL(clicked()), this, SLOT(resetInputsForWeather()));
@@ -244,6 +245,12 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
         //
         ui->dateTimeDisplayer->setText(ui->comboBoxOfIANATimezones->currentText() + ": " + currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText()));
     }
+}
+
+//
+void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
+{
+    qDebug() << "\n\n\n\n\nTest\n\n\n\n\n";
 }
 
 // Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
