@@ -53,5 +53,11 @@
     "Asia/Choibalsan": "mn",
     "Asia/Hovd": "mn",
     "Asia/Yangon": "mm",
-    "Asia/Yerevan": "am"
+    "Asia/Yerevan": "am",
+
+    "Atlantic/Cape_Verde": "cv",
+    "Atlantic/Azores": "pt",
+    "Atlantic/South_Georgia": "gs",
+    "Atlantic/Stanley": "fk",
+    "Atlantic/Madeira": "pt"
 }
