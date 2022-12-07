@@ -8,6 +8,7 @@
     "Africa/Tunis": "tn",
     "Africa/Windhoek": "na",
     "America/Adak": "us",
+    "America/Puerto_Rico": "pr",
 
     "Asia/Anadyr": "ru",
     "Asia/Anadyr": "ru",
@@ -41,6 +42,13 @@
 
     "Asia/Urumqi": "cn",
     "Asia/Shanghai": "cn",
+    "Asia/Macau": "mo",
+    "Asia/Hong_Kong": "hk",
+    "Asia/Baku": "az",
+    "Asia/Baghdad": "iq",
+    "Asia/Beirut": "lb",
+    "Asia/Bishkek": "kg",
+
     "Asia/Pyongyang": "kp",
     "Asia/Seoul": "kr",
     "Asia/Singapore": "sg",
