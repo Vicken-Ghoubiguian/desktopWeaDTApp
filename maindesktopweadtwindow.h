@@ -45,6 +45,9 @@ public:
     //
     QFont getCurrentFont();
 
+    //
+    QString getCountryCodeFromTimezone(QString tz);
+
 private slots:
 
     //

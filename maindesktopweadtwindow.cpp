@@ -248,9 +248,15 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 }
 
 //
+QString MainDesktopWeaDTWindow::getCountryCodeFromTimezone(QString tz)
+{
+    return "za";
+}
+
+//
 void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
 {
-    qDebug() << "\n\n\n\n\nTest\n\n\n\n\n";
+    qDebug() << "https://flagcdn.com/w40/" + getCountryCodeFromTimezone(ui->comboBoxOfIANATimezones->currentText()) + ".png";
 }
 
 // Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
