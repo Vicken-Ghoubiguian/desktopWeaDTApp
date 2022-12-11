@@ -8,6 +8,7 @@
 #include "weather.h"
 #include "wind.h"
 #include "ultraviolet.h"
+#include "sys.h"
 
 class RawWeather
 {
@@ -24,6 +25,7 @@ public:
     Weather* getWeather();
 
     //
+    Sys* getSys();
 
     //
     int getUTCDateTime();
@@ -65,6 +67,9 @@ private:
 
     //
     Weather* weather;
+
+    //
+    Sys* sys;
 
     //
     double clouds;
