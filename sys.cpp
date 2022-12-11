@@ -4,3 +4,9 @@ Sys::Sys()
 {
 
 }
+
+//
+QString Sys::toString()
+{
+    return "";
+}
