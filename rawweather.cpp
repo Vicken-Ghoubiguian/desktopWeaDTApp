@@ -44,6 +44,13 @@ Weather* RawWeather::getWeather() {
 }
 
 //
+Sys* RawWeather::getSys() {
+
+    //
+    return this->sys;
+}
+
+//
 int RawWeather::getUTCDateTime() {
 
     //
