@@ -38,6 +38,6 @@ QString Weather::toString()
 {
     return "Description: " + this->description + "\n" +
            "Icon: " + this->icon + "\n" +
-            "Id: " + QString::number(this->id) + "\n" +
-            "Main: " + this->main;
+           "Id: " + QString::number(this->id) + "\n" +
+           "Main: " + this->main;
 }
