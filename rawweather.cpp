@@ -112,6 +112,7 @@ QString RawWeather::toString() {
     //
     return "Coordinates: " + this->coords->toString() + "\n" +
            this->weather->toString() + "\n" +
+           this->sys->toString() + "\n" +
            "Base: " + this->base + "\n" +
            "UTC datetime (in seconds): " + QString::number(this->utc_dateTime) + "\n" +
            "Offset from UTC (in seconds): " + QString::number(this->timezone_s_offset_from_utc) + "\n" +
