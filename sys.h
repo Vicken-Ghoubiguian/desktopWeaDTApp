@@ -12,14 +12,19 @@ public:
     Sys();
 
     //
+    QString getCountry();
 
     //
+    int getId();
 
     //
+    int getSunrise();
 
     //
+    int getSunset();
 
     //
+    int getType();
 
     //
     QString toString();
