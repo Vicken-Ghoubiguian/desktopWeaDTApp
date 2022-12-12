@@ -312,6 +312,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         {
             case QNetworkReply::ConnectionRefusedError : qDebug() << "Test";
             case QNetworkReply::RemoteHostClosedError : qDebug() << "Test";
+            default : qDebug() << "Test";
         }
 
         //
