@@ -308,6 +308,9 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         ui->weatherTextDisplay->setText(reply->errorString());
 
         //
+        qDebug() << reply->errorString();
+
+        //
         return;
     }
 
