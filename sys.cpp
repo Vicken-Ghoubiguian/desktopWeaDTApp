@@ -42,5 +42,6 @@ int Sys::getType()
 //
 QString Sys::toString()
 {
+    //
     return "";
 }
