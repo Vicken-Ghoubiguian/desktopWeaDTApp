@@ -13,6 +13,23 @@ public:
 
     //
     QString toString();
+
+private:
+
+    //
+    QString country;
+
+    //
+    int id;
+
+    //
+    int sunrise;
+
+    //
+    int sunset;
+
+    //
+    int type;
 };
 
 #endif // SYS_H
