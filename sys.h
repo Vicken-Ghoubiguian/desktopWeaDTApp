@@ -12,6 +12,16 @@ public:
     Sys();
 
     //
+
+    //
+
+    //
+
+    //
+
+    //
+
+    //
     QString toString();
 
 private:
