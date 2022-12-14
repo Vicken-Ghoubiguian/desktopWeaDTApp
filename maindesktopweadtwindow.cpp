@@ -305,7 +305,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     if (reply->error()) {
 
         //
-        ui->weatherTextDisplay->setText(reply->errorString());
+        QString errorType = "";
 
         //
         switch (reply->error())
@@ -325,6 +325,9 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
 
             default : qDebug() << "Test";
         }
+
+        //
+        ui->weatherTextDisplay->setText(reply->errorString());
 
         //
         return;
