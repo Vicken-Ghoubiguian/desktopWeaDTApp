@@ -310,8 +310,19 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         //
         switch (reply->error())
         {
-            case QNetworkReply::ConnectionRefusedError : qDebug() << "Test";
-            case QNetworkReply::RemoteHostClosedError : qDebug() << "Test";
+            case QNetworkReply::ConnectionRefusedError : qDebug() << "Test"; break;
+            case QNetworkReply::RemoteHostClosedError : qDebug() << "Test"; break;
+            case QNetworkReply::HostNotFoundError : qDebug() << "Test"; break;
+            case QNetworkReply::TimeoutError : qDebug() << "Test"; break;
+            case QNetworkReply::OperationCanceledError : qDebug() << "Test"; break;
+            case QNetworkReply::SslHandshakeFailedError : qDebug() << "Test"; break;
+            case QNetworkReply::TemporaryNetworkFailureError : qDebug() << "Test"; break;
+            case QNetworkReply::NetworkSessionFailedError : qDebug() << "Test"; break;
+            case QNetworkReply::BackgroundRequestNotAllowedError : qDebug() << "Test"; break;
+            case QNetworkReply::TooManyRedirectsError : qDebug() << "Test"; break;
+            case QNetworkReply::InsecureRedirectError : qDebug() << "Test"; break;
+            case QNetworkReply::ProxyConnectionRefusedError : qDebug() << "Test"; break;
+
             default : qDebug() << "Test";
         }
 
