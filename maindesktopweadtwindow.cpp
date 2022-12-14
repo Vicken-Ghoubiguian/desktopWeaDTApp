@@ -327,7 +327,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         }
 
         //
-        ui->weatherTextDisplay->setText(reply->errorString());
+        ui->weatherTextDisplay->setText(errorType + "\n\n\n\n" + reply->errorString());
 
         //
         return;
