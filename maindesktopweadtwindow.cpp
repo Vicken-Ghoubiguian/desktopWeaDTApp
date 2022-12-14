@@ -310,18 +310,18 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         //
         switch (reply->error())
         {
-            case QNetworkReply::ConnectionRefusedError : errorType = ""; break;
-            case QNetworkReply::RemoteHostClosedError : errorType = ""; break;
-            case QNetworkReply::HostNotFoundError : errorType = ""; break;
-            case QNetworkReply::TimeoutError : errorType = ""; break;
-            case QNetworkReply::OperationCanceledError : errorType = ""; break;
-            case QNetworkReply::SslHandshakeFailedError : errorType = ""; break;
-            case QNetworkReply::TemporaryNetworkFailureError : errorType = ""; break;
-            case QNetworkReply::NetworkSessionFailedError : errorType = ""; break;
-            case QNetworkReply::BackgroundRequestNotAllowedError : errorType = ""; break;
-            case QNetworkReply::TooManyRedirectsError : errorType = ""; break;
-            case QNetworkReply::InsecureRedirectError : errorType = ""; break;
-            case QNetworkReply::ProxyConnectionRefusedError : errorType = ""; break;
+            case QNetworkReply::ConnectionRefusedError : errorType = "ConnectionRefusedError"; break;
+            case QNetworkReply::RemoteHostClosedError : errorType = "RemoteHostClosedError"; break;
+            case QNetworkReply::HostNotFoundError : errorType = "HostNotFoundError"; break;
+            case QNetworkReply::TimeoutError : errorType = "TimeoutError"; break;
+            case QNetworkReply::OperationCanceledError : errorType = "OperationCanceledError"; break;
+            case QNetworkReply::SslHandshakeFailedError : errorType = "SslHandshakeFailedError"; break;
+            case QNetworkReply::TemporaryNetworkFailureError : errorType = "TemporaryNetworkFailureError"; break;
+            case QNetworkReply::NetworkSessionFailedError : errorType = "NetworkSessionFailedError"; break;
+            case QNetworkReply::BackgroundRequestNotAllowedError : errorType = "BackgroundRequestNotAllowedError"; break;
+            case QNetworkReply::TooManyRedirectsError : errorType = "TooManyRedirectsError"; break;
+            case QNetworkReply::InsecureRedirectError : errorType = "InsecureRedirectError"; break;
+            case QNetworkReply::ProxyConnectionRefusedError : errorType = "ProxyConnectionRefusedError"; break;
 
             default : errorType = "";
         }
