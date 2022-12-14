@@ -305,7 +305,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
     if (reply->error()) {
 
         //
-        QString errorType = "";
+        QString errorType;
 
         //
         switch (reply->error())
@@ -323,7 +323,7 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
             case QNetworkReply::InsecureRedirectError : qDebug() << "Test"; break;
             case QNetworkReply::ProxyConnectionRefusedError : qDebug() << "Test"; break;
 
-            default : qDebug() << "Test";
+            default : errorType = "";
         }
 
         //
