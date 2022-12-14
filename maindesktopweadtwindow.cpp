@@ -310,18 +310,18 @@ void MainDesktopWeaDTWindow::managerFinishedForWeather(QNetworkReply *reply) {
         //
         switch (reply->error())
         {
-            case QNetworkReply::ConnectionRefusedError : qDebug() << "Test"; break;
-            case QNetworkReply::RemoteHostClosedError : qDebug() << "Test"; break;
-            case QNetworkReply::HostNotFoundError : qDebug() << "Test"; break;
-            case QNetworkReply::TimeoutError : qDebug() << "Test"; break;
-            case QNetworkReply::OperationCanceledError : qDebug() << "Test"; break;
-            case QNetworkReply::SslHandshakeFailedError : qDebug() << "Test"; break;
-            case QNetworkReply::TemporaryNetworkFailureError : qDebug() << "Test"; break;
-            case QNetworkReply::NetworkSessionFailedError : qDebug() << "Test"; break;
-            case QNetworkReply::BackgroundRequestNotAllowedError : qDebug() << "Test"; break;
-            case QNetworkReply::TooManyRedirectsError : qDebug() << "Test"; break;
-            case QNetworkReply::InsecureRedirectError : qDebug() << "Test"; break;
-            case QNetworkReply::ProxyConnectionRefusedError : qDebug() << "Test"; break;
+            case QNetworkReply::ConnectionRefusedError : errorType = ""; break;
+            case QNetworkReply::RemoteHostClosedError : errorType = ""; break;
+            case QNetworkReply::HostNotFoundError : errorType = ""; break;
+            case QNetworkReply::TimeoutError : errorType = ""; break;
+            case QNetworkReply::OperationCanceledError : errorType = ""; break;
+            case QNetworkReply::SslHandshakeFailedError : errorType = ""; break;
+            case QNetworkReply::TemporaryNetworkFailureError : errorType = ""; break;
+            case QNetworkReply::NetworkSessionFailedError : errorType = ""; break;
+            case QNetworkReply::BackgroundRequestNotAllowedError : errorType = ""; break;
+            case QNetworkReply::TooManyRedirectsError : errorType = ""; break;
+            case QNetworkReply::InsecureRedirectError : errorType = ""; break;
+            case QNetworkReply::ProxyConnectionRefusedError : errorType = ""; break;
 
             default : errorType = "";
         }
