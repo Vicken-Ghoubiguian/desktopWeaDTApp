@@ -9,6 +9,8 @@ Multi-functional desktop application which can do multiple things with time, wea
 * [Introduction](#introduction),
 * [Development](#development),
 * [Used technologies](#used_technologies),
+* [Generation of the executable file](),
+* [Generation of the installer file](),
 * [Deployment](#deployment),
   * [Generation of executable file](#generation_executable_file),
   * [On Windows](#on_windows),
