@@ -12,7 +12,6 @@ Multi-functional desktop application which can do multiple things with time, wea
 * [Generation of the executable file](#generation_of_the_executable_file),
 * [Generation of the installer file](#generation_of_the_installer_file),
 * [Deployment](#deployment),
-  * [Generation of executable file](#generation_executable_file),
   * [On Windows](#on_windows),
   * [On Linux](#on_linux),
   * [On Mac](#on_mac),
