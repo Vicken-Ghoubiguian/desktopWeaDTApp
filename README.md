@@ -46,8 +46,20 @@ The application developed by this project includes the following features :
 <a name="generation_of_the_executable_file"></a>
 ## Generation of the executable file
 
+### On Windows
+
+### On Linux
+
+### On Mac
+
 <a name="generation_of_the_installer_file"></a>
 ## Generation of the installer file
+
+### On Windows
+
+### On Linux
+
+### On Mac
 
 <a name="deployment"></a>
 ## Deployment
