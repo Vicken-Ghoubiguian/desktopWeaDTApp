@@ -43,11 +43,14 @@ The application developed by this project includes the following features :
 <a name="used_technologies"></a>
 ## Used technologies
 
+<a name="generation_of_the_executable_file"></a>
+## Generation of the executable file
+
+<a name="generation_of_the_installer_file"></a>
+## Generation of the installer file
+
 <a name="deployment"></a>
 ## Deployment
-
-<a name="generation_executable_file"></a>
-### Generation of executable file
 
 <a name="on_windows"></a>
 ### On Windows
