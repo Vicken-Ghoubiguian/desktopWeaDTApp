@@ -8,7 +8,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->base = openWeatherObj["base"].toString();
     this->id = openWeatherObj["id"].toInt();
     this->timezone_s_offset_from_utc = openWeatherObj["timezone"].toInt();
-    this->location_name = openWeatherObj["name"].toString();
+    //this->location_name = openWeatherObj["name"].toString();
     this->utc_dateTime = openWeatherObj["dt"].toInt();
     this->visibility = openWeatherObj["visibility"].toInt();
     this->clouds = openWeatherObj["clouds"].toObject().take("all").toDouble();
@@ -18,6 +18,7 @@ RawWeather::RawWeather(QJsonObject openWeatherObj, QJsonValue weatherObj)
     this->coords = new Coordinates(openWeatherObj["coord"].toObject().take("lon").toDouble(), openWeatherObj["coord"].toObject().take("lat").toDouble());
     this->weather = new Weather(weatherObj.toObject().take("description").toString(), weatherObj.toObject().take("icon").toString(), weatherObj.toObject().take("id").toInt(), weatherObj.toObject().take("main").toString());
 
+    //this->location = new GeographicLocation("", "");
     this->wind = new Wind(openWeatherObj["wind"].toObject().take("speed").toDouble(), openWeatherObj["wind"].toObject().take("deg").toInt());
 
     qDebug() << openWeatherObj;
@@ -72,13 +73,6 @@ int RawWeather::getId() {
 }
 
 //
-QString RawWeather::getLocationSName() {
-
-    //
-    return this->location_name;
-}
-
-//
 int RawWeather::getCod() {
 
     //
@@ -119,6 +113,6 @@ QString RawWeather::toString() {
            "Datetime from location according to UTC (in UNIX format): " + QString::number(this->corresponding_tz_datetime) + "\n" +
            "Visibility: " + QString::number(this->visibility) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
-           "Geographic location: " + this->location_name + "\n" +
+           "Geographic location: " + "" + "\n" +
            "Returning code : " + QString::number(this->cod) + "\n";
 }

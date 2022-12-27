@@ -38,7 +38,7 @@ public:
     int getId();
 
     //
-    GeographicLocation getLocation();
+    //GeographicLocation getLocation();
 
     //
     int getCod();
@@ -88,10 +88,7 @@ private:
     int visibility;
 
     //
-    QString location_name;
-
-    //
-    GeographicLocation location;
+    //GeographicLocation location;
 
     //
     QString iconUrl;
