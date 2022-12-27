@@ -12,10 +12,10 @@ class UltraViolet
 public:
 
     //
-    UltraViolet(double longitude, double latitude);
+    UltraViolet(QString apiKey, double longitude, double latitude);
 
     //
-    UltraViolet(int value);
+    UltraViolet(QString apiKey, int value);
 
     //
     int getIndex();
