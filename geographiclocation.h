@@ -11,6 +11,9 @@ public:
     //
     GeographicLocation(QString countryCode, QString cityName);
 
+    //
+    QString toString();
+
 private:
 
     //
