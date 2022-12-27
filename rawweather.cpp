@@ -113,6 +113,6 @@ QString RawWeather::toString() {
            "Datetime from location according to UTC (in UNIX format): " + QString::number(this->corresponding_tz_datetime) + "\n" +
            "Visibility: " + QString::number(this->visibility) + "\n" +
            "Id: " + QString::number(this->id) + "\n" +
-           "Geographic location: " + "" + "\n" +
+           "Geographic location: " + this->location->toString() + "\n" +
            "Returning code : " + QString::number(this->cod) + "\n";
 }
