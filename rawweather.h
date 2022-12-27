@@ -38,9 +38,6 @@ public:
     int getId();
 
     //
-    QString getLocationSName();
-
-    //
     GeographicLocation getLocation();
 
     //
