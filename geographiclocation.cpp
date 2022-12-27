@@ -1,10 +1,10 @@
 #include "geographiclocation.h"
 
 //
-GeographicLocation::GeographicLocation(QString countryCode, QString cityName)
+GeographicLocation::GeographicLocation(QString cityName, QString countryCode)
 {
-    this->countryCode = countryCode;
     this->cityName = cityName;
+    this->countryCode = countryCode;
 }
 
 //

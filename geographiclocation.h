@@ -9,7 +9,7 @@ class GeographicLocation
 public:
 
     //
-    GeographicLocation(QString countryCode, QString cityName);
+    GeographicLocation(QString cityName, QString countryCode);
 
     //
     QString toString();
@@ -17,10 +17,10 @@ public:
 private:
 
     //
-    QString countryCode;
+    QString cityName;
 
     //
-    QString cityName;
+    QString countryCode;
 };
 
 #endif // GEOGRAPHICLOCATION_H
