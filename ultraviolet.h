@@ -1,6 +1,9 @@
 #ifndef ULTRAVIOLET_H
 #define ULTRAVIOLET_H
 
+#include <QString>
+#include <QJsonObject>
+
 #include "ultravioletrisk.h"
 
 class UltraViolet

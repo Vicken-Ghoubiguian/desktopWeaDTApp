@@ -2,6 +2,8 @@
 
 UltraViolet::UltraViolet(double longitude, double latitude)
 {
+    //
+    QString openWeatherURLToGetUV = "";
 
     int value = 0;
 
