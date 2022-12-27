@@ -3,7 +3,7 @@
 UltraViolet::UltraViolet(double longitude, double latitude)
 {
     //
-    QString openWeatherURLToGetUV = "https://api.openweathermap.org/data/2.5/uvi?appid=%s&lat=%s&lon=%s";
+    QString openWeatherURLToGetUV = "https://api.openweathermap.org/data/2.5/uvi?appid=%s&lat=" + QString::number(latitude) + "&lon=" + QString::number(longitude);
 
     int value = 0;
 
