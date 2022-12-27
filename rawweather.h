@@ -9,6 +9,7 @@
 #include "wind.h"
 #include "ultraviolet.h"
 #include "sys.h"
+#include "geographiclocation.h"
 
 class RawWeather
 {
@@ -38,6 +39,9 @@ public:
 
     //
     QString getLocationSName();
+
+    //
+    GeographicLocation getLocation();
 
     //
     int getCod();
@@ -88,6 +92,9 @@ private:
 
     //
     QString location_name;
+
+    //
+    GeographicLocation location;
 
     //
     QString iconUrl;
