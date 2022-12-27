@@ -10,5 +10,5 @@ GeographicLocation::GeographicLocation(QString countryCode, QString cityName)
 //
 QString GeographicLocation::toString()
 {
-    return "";
+    return "(" + this->cityName + " " + this->countryCode + ")";
 }
