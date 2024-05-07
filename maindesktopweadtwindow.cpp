@@ -250,12 +250,14 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 //
 QString MainDesktopWeaDTWindow::getCountryCodeFromTimezone(QString tz)
 {
+    //
     return "za";
 }
 
 //
 void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
 {
+    //
     qDebug() << "https://flagcdn.com/w40/" + getCountryCodeFromTimezone(ui->comboBoxOfIANATimezones->currentText()) + ".png";
 }
 
