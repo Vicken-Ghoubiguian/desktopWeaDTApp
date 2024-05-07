@@ -12,7 +12,7 @@ SOURCES += \
     coordinates.cpp \
     countryflag.cpp \
     geographiclocation.cpp \
-    # humidity.cpp \
+    humidity.cpp \
     main.cpp \
     maindesktopweadtwindow.cpp \
     rawweather.cpp \
@@ -25,7 +25,7 @@ HEADERS += \
     coordinates.h \
     countryflag.h \
     geographiclocation.h \
-    # humidity.h \
+    humidity.h \
     maindesktopweadtwindow.h \
     rawweather.h \
     sys.h \
