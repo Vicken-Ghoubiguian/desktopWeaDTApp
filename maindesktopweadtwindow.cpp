@@ -250,6 +250,9 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 //
 QString MainDesktopWeaDTWindow::getCountryCodeFromTimezone(QString tz)
 {
+    // To debug...
+    qDebug() << ui->comboBoxOfIANATimezones->currentText();
+
     //
     return "za";
 }
