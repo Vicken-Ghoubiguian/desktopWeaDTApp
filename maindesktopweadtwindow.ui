@@ -36,20 +36,33 @@
      <widget class="QLabel" name="presentationAppTitleLabel">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>260</x>
         <y>20</y>
-        <width>261</width>
-        <height>31</height>
+        <width>255</width>
+        <height>20</height>
        </rect>
       </property>
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-        <horstretch>10</horstretch>
-        <verstretch>10</verstretch>
+        <horstretch>22</horstretch>
+        <verstretch>20</verstretch>
        </sizepolicy>
       </property>
       <property name="text">
        <string>L'app which déchire vraiment ta life !!!!</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>40</y>
+        <width>791</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bienvenue sur &lt;i&gt;L'app which déchire vraiment ta life !!!!&lt;/i&gt;, l'application qui déchire vraiment ta vie !!!!</string>
       </property>
      </widget>
     </widget>
