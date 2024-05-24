@@ -1,7 +1,7 @@
 #include "countryflag.h"
 
 //
-CountryFlag::CountryFlag(QString countryCode, QObject *parent) : QObject(parent)
+CountryFlag::CountryFlag(QString wishedTimezone, QObject *parent) : QObject(parent)
 {
 
 }

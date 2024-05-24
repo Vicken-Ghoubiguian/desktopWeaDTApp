@@ -2,13 +2,14 @@
 #define COUNTRYFLAG_H
 
 #include <QObject>
+#include <QSqlDatabase>
 
 class CountryFlag : public QObject
 {
     Q_OBJECT
 
 public:
-    explicit CountryFlag(QString countryCode, QObject *parent = nullptr);
+    explicit CountryFlag(QString wishedTimezone, QObject *parent = nullptr);
     QString getFlagURL();
     QString getCountryCode();
     QString getCountryName();
