@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QSqlDatabase>
+#include <QDebug>
 
 class SQLITEManager : public QObject
 {
