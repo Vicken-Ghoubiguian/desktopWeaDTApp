@@ -2,5 +2,6 @@
     <qresource prefix="/ressources">
         <file>img/cybcity.png</file>
         <file>img/cybcity.ico</file>
+        <file>models/country_code.db</file>
     </qresource>
 </RCC>
