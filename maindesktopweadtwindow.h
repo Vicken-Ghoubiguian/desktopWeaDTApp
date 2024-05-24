@@ -14,7 +14,8 @@
 #include <QJsonArray>
 #include <QSysInfo>
 
-#include <rawweather.h>
+#include "rawweather.h"
+#include "sqlitemanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainDesktopWeaDTWindow; }
@@ -77,6 +78,9 @@ private:
 
     //
     Ui::MainDesktopWeaDTWindow *ui;
+
+    //
+    SQLITEManager *currentSQLITEManager;
 
     //
     QList<QString> allTimezonesQList;

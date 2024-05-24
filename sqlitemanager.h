@@ -11,7 +11,7 @@ class SQLITEManager : public QObject
 public:
 
     //
-    SQLITEManager(QString sqlitePath);
+    SQLITEManager(const QString sqlitePath);
 
 signals:
 
