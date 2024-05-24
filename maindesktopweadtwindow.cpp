@@ -8,7 +8,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
 {
     //
-    this->currentSQLITEManager = new SQLITEManager(":/models/country_code.db");
+    this->currentSQLITEManager = new SQLITEManager("country_code.db");
 
     // Definition and implementation of IANA timezones QList<QString>...
     this->allTimezonesQList = this->getAllIANATimezones();
