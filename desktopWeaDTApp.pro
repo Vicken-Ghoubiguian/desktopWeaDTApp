@@ -16,6 +16,7 @@ SOURCES += \
     main.cpp \
     maindesktopweadtwindow.cpp \
     rawweather.cpp \
+    sqlitemanager.cpp \
     sys.cpp \
     ultraviolet.cpp \
     weather.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     humidity.h \
     maindesktopweadtwindow.h \
     rawweather.h \
+    sqlitemanager.h \
     sys.h \
     ultraviolet.h \
     ultravioletrisk.h \
