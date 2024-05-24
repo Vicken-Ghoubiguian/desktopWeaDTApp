@@ -5,6 +5,8 @@
 #include <QSqlDatabase>
 #include <QDebug>
 
+#include "colors_and_styles.h"
+
 class SQLITEManager : public QObject
 {
     Q_OBJECT

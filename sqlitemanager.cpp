@@ -13,7 +13,9 @@ SQLITEManager::SQLITEManager(QString sqlitePath)
     if(!sqliteDBConnector.open())
     {
         //
-        qDebug() << "\033[1m\033[31mError : connection with the '' sqlite database FAILLED ! Exiting application ! \033[0m";
+        qDebug() << BOLD_RED;
+        qDebug() << "Error : connection with the '' sqlite database FAILLED ! Exiting application ! ";
+        qDebug() << RESET;
 
         //
         exit(1);

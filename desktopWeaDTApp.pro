@@ -23,6 +23,7 @@ SOURCES += \
     wind.cpp
 
 HEADERS += \
+    colors_and_styles.h \
     coordinates.h \
     countryflag.h \
     geographiclocation.h \
