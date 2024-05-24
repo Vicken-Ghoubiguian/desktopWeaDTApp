@@ -1,5 +1,6 @@
 //
-#define BOLD_RED "\033[1m\033[31m"
+#define BOLD_RED "\e[1;31m"
+#define BOLD_GREEN "\e[1;32m"
 
 //
-#define RESET "\033[0m"
+#define RESET "\e[0m"
