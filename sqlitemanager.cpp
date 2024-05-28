@@ -1,7 +1,7 @@
 #include "sqlitemanager.h"
 
 //
-SQLITEManager::SQLITEManager(QString sqlitePath)
+SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
 {
     //
     QSqlDatabase sqliteDBConnector = QSqlDatabase::addDatabase("QSQLITE");
@@ -27,17 +27,17 @@ SQLITEManager::SQLITEManager(QString sqlitePath)
     qDebug() << RESET;
 
     //
-    this->testDB();
+    this->testDB(testQuery);
 }
 
 //
-void SQLITEManager::testDB()
+void SQLITEManager::testDB(QString testQuery)
 {
     //
     QSqlQuery query;
 
     //
-    query.prepare("SELECT * FROM timezones;");
+    query.prepare(testQuery);
 
     //
     if(!query.exec())

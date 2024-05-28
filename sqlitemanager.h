@@ -15,7 +15,7 @@ class SQLITEManager : public QObject
 public:
 
     //
-    SQLITEManager(const QString sqlitePath);
+    SQLITEManager(const QString sqlitePath, const QString testQuery);
 
 signals:
 
@@ -25,7 +25,7 @@ private:
     QSqlDatabase sqliteDBConnector;
 
     //
-    void testDB();
+    void testDB(const QString testQuery);
 };
 
 #endif // SQLITEMANAGER_H

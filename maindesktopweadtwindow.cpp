@@ -8,7 +8,7 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     , ui(new Ui::MainDesktopWeaDTWindow)
 {
     //
-    this->currentSQLITEManager = new SQLITEManager("desktopWeaDTApp.db");
+    this->currentSQLITEManager = new SQLITEManager("desktopWeaDTApp.db", "SELECT * FROM timezones;");
 
     // Definition and implementation of IANA timezones QList<QString>...
     this->allTimezonesQList = this->getAllIANATimezones();
