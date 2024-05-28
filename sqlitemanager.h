@@ -23,6 +23,9 @@ private:
 
     //
     QSqlDatabase sqliteDBConnector;
+
+    //
+    void testDB();
 };
 
 #endif // SQLITEMANAGER_H
