@@ -92,6 +92,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     qDebug() << this->currentCountryFlag->getFlagURL();
     /* To set country's flag (future) */
 
+    /*QUrl url("https://flagcdn.com/w40/za.png");
+    flagRequest.setUrl(url);
+    flagManager.get(flagRequest);*/
+
     //
     this->updateDisplayedTimeForSpecificTimeZone();
 
@@ -149,10 +153,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     connect(&this->weatherManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(managerFinishedForWeather(QNetworkReply*)));
     connect(ui->familyFontComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeFamilyFont()));
     connect(ui->backgroundColorForCBComboBox, SIGNAL(currentIndexChanged(int)), this, SLOT(changeBackgroundColorOfComboBox()));
-
-    /*QUrl url("https://flagcdn.com/w40/za.png");
-    flagRequest.setUrl(url);
-    flagManager.get(flagRequest);*/
 }
 
 /*void MainDesktopWeaDTWindow::managerFinishedForFlag(QNetworkReply *reply)
@@ -275,6 +275,10 @@ void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
     /* To set country's flag (future) */
     qDebug() << this->currentCountryFlag->getFlagURL();
     /* To set country's flag (future) */
+
+    /*QUrl url("https://flagcdn.com/w40/za.png");
+    flagRequest.setUrl(url);
+    flagManager.get(flagRequest);*/
 }
 
 // Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
