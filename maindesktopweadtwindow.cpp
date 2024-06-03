@@ -88,10 +88,12 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     this->currentCountryFlag = getCountryFlagFromTimezone(this->getSystemIANATimezone());
 
+    //
     /* To set country's flag (future) */
     qDebug() << this->currentCountryFlag->getFlagURL();
     /* To set country's flag (future) */
 
+    //
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
     flagManager.get(flagRequest);*/
@@ -272,10 +274,12 @@ void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
     //
     this->currentCountryFlag = getCountryFlagFromTimezone(ui->comboBoxOfIANATimezones->currentText());
 
+    //
     /* To set country's flag (future) */
     qDebug() << this->currentCountryFlag->getFlagURL();
     /* To set country's flag (future) */
 
+    //
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
     flagManager.get(flagRequest);*/
