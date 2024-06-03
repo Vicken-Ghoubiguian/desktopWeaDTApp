@@ -88,6 +88,10 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     //
     this->currentCountryFlag = getCountryFlagFromTimezone(this->getSystemIANATimezone());
 
+    /* To set country's flag (future) */
+    qDebug() << this->currentCountryFlag->getFlagURL();
+    /* To set country's flag (future) */
+
     //
     this->updateDisplayedTimeForSpecificTimeZone();
 
@@ -102,7 +106,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     {
         // Defines the logo of the application for a Windows type operating system...
         setWindowIcon(QIcon(":/img/cybcity.ico"));
-
     }
     //
     else
@@ -269,8 +272,9 @@ void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
     //
     this->currentCountryFlag = getCountryFlagFromTimezone(ui->comboBoxOfIANATimezones->currentText());
 
-    //
+    /* To set country's flag (future) */
     qDebug() << this->currentCountryFlag->getFlagURL();
+    /* To set country's flag (future) */
 }
 
 // Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
