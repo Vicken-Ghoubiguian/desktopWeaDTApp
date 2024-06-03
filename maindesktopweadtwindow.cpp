@@ -63,6 +63,9 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->comboBoxOfIANATimezones->addItems(this->allTimezonesQList);
     ui->comboBoxOfIANATimezones->setCurrentIndex(this->getIANATimezoneIndex(this->getSystemIANATimezone()));
 
+    //
+    this->currentCountryFlag = getCountryFlagFromTimezone(this->getSystemIANATimezone());
+
     // Stylisation of widgets in the 'date and time' tab's section...
     ui->dateTimeDisplayer->setAlignment(Qt::AlignCenter);
     ui->dateTimeDisplayer->setStyleSheet("font-size: 27px;");
