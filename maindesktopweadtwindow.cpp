@@ -257,7 +257,7 @@ QString MainDesktopWeaDTWindow::getCountryCodeFromTimezone(QString tz)
     qDebug() << ui->comboBoxOfIANATimezones->currentText();
 
     //
-    return "za";
+    return currentSQLITEManager->getCountryCodeFromTimezone(ui->comboBoxOfIANATimezones->currentText());
 }
 
 //

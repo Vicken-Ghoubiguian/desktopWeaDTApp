@@ -17,6 +17,9 @@ public:
     //
     SQLITEManager(const QString sqlitePath, const QString testQuery);
 
+    //
+    QString getCountryCodeFromTimezone(QString timezone);
+
 signals:
 
 private:

@@ -31,6 +31,13 @@ SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
 }
 
 //
+QString SQLITEManager::getCountryCodeFromTimezone(QString timezone)
+{
+    //
+    return "za";
+}
+
+//
 void SQLITEManager::testDB(QString testQuery)
 {
     //
