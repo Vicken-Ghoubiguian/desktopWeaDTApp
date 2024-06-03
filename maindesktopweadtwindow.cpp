@@ -250,7 +250,7 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
     }
 }
 
-//
+// 'MainDesktopWeaDTWindow' class's method to get the country code associated to the current timezone's country...
 QString MainDesktopWeaDTWindow::getCountryCodeFromTimezone(QString tz)
 {
     // To debug...

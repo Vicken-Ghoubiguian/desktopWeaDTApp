@@ -46,7 +46,7 @@ public:
     //
     QFont getCurrentFont();
 
-    //
+    // 'MainDesktopWeaDTWindow' class's method to get the country code associated to the current timezone's country...
     QString getCountryCodeFromTimezone(QString tz);
 
 private slots:
