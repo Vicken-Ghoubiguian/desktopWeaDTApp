@@ -14,6 +14,7 @@
 #include <QJsonArray>
 #include <QSysInfo>
 
+#include "countryflag.h"
 #include "rawweather.h"
 #include "sqlitemanager.h"
 
@@ -47,7 +48,7 @@ public:
     QFont getCurrentFont();
 
     // 'MainDesktopWeaDTWindow' class's method to get the country flag associated to the current timezone's country...
-    QString getCountryFlagFromTimezone(QString tz);
+    CountryFlag* getCountryFlagFromTimezone(QString tz);
 
 private slots:
 

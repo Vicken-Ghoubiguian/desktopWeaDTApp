@@ -251,20 +251,23 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
 }
 
 // 'MainDesktopWeaDTWindow' class's method to get the country flag associated to the current timezone's country...
-QString MainDesktopWeaDTWindow::getCountryFlagFromTimezone(QString tz)
+CountryFlag* MainDesktopWeaDTWindow::getCountryFlagFromTimezone(QString tz)
 {
     // To debug...
     qDebug() << ui->comboBoxOfIANATimezones->currentText();
 
     //
-    return currentSQLITEManager->getCountryCodeFromTimezone(ui->comboBoxOfIANATimezones->currentText());
+    return new CountryFlag(currentSQLITEManager->getCountryCodeFromTimezone(ui->comboBoxOfIANATimezones->currentText()));
 }
 
 //
 void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
 {
     //
-    qDebug() << "https://flagcdn.com/w40/" + getCountryFlagFromTimezone(ui->comboBoxOfIANATimezones->currentText()) + ".png";
+    CountryFlag* localCountryFlag = getCountryFlagFromTimezone(ui->comboBoxOfIANATimezones->currentText());
+
+    //
+    qDebug() << "https://flagcdn.com/w40/" + localCountryFlag->getCountryCode() + ".png";
 }
 
 // Definition of the 'resetInputsForWeather' function to reset all localization's, country code's and api key's lineEdits and the weather's textDisplay to empty...
