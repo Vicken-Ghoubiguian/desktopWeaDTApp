@@ -2,9 +2,12 @@
 
 //
 CountryFlag::CountryFlag(QString countryCode, QObject *parent) : QObject(parent)
-{
+{   
     //
     this->countryCode = countryCode;
+
+    //
+    this->flagURL = "https://flagcdn.com/w40/" + countryCode + ".png";
 }
 
 //

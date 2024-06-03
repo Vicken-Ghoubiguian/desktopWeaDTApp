@@ -81,7 +81,7 @@ private:
     Ui::MainDesktopWeaDTWindow *ui;
 
     //
-    SQLITEManager *currentSQLITEManager;
+    SQLITEManager* currentSQLITEManager;
 
     //
     QList<QString> allTimezonesQList;
@@ -112,6 +112,9 @@ private:
 
     //
     QFont currentFont;
+
+    //
+    CountryFlag* currentCountryFlag;
 
     //
     QJsonDocument getWeatherJsonDocument();
