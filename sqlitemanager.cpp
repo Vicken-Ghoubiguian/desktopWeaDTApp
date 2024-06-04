@@ -59,7 +59,7 @@ void SQLITEManager::testDB(QString testQuery)
         while (query.next())
         {
             //
-            qDebug() << query.value("id") << ". " << query.value("name").toString();
+            qDebug() << query.value("name").toString();
         }
     }
 }
