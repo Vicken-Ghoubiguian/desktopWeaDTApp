@@ -47,9 +47,6 @@ public:
     //
     QFont getCurrentFont();
 
-    // 'MainDesktopWeaDTWindow' class's method to get the country flag associated to the current timezone's country...
-    //CountryFlag* getCountryFlagFromTimezone(QString tz);
-
 private slots:
 
     //

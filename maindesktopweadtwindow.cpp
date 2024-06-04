@@ -86,8 +86,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     ui->validationButton->setCursor(Qt::PointingHandCursor);
 
     //
-    //this->currentCountryFlag = getCountryFlagFromTimezone(this->getSystemIANATimezone());
-
     this->updateDisplayedCountryFlagForSpecificTimeZone();
 
     //
@@ -99,9 +97,6 @@ MainDesktopWeaDTWindow::MainDesktopWeaDTWindow(QWidget *parent)
     /*QUrl url("https://flagcdn.com/w40/za.png");
     flagRequest.setUrl(url);
     flagManager.get(flagRequest);*/
-
-    //
-    this->updateDisplayedTimeForSpecificTimeZone();
 
     // Definition of the application's (and main window's too) name...
     this->setWindowTitle("L'app which déchire vraiment ta life !!!!");
@@ -259,16 +254,6 @@ void MainDesktopWeaDTWindow::updateDisplayedTimeForSpecificTimeZone()
         ui->dateTimeDisplayer->setText(ui->comboBoxOfIANATimezones->currentText() + ": " + currentTimeZoneDateTime.toString(ui->comboBoxDateAndTimeFormats->currentText()));
     }
 }
-
-// 'MainDesktopWeaDTWindow' class's method to get the country flag associated to the current timezone's country...
-/*CountryFlag* MainDesktopWeaDTWindow::getCountryFlagFromTimezone(QString tz)
-{
-    // To debug...
-    qDebug() << tz;
-
-    //
-    return new CountryFlag(currentSQLITEManager->getCountryCodeFromTimezone(tz));
-}*/
 
 //
 void MainDesktopWeaDTWindow::updateDisplayedCountryFlagForSpecificTimeZone()
