@@ -14,7 +14,7 @@ SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
     {
         //
         qDebug() << BOLD_RED;
-        qDebug() << "Error : connection with the '' sqlite database FAILLED ! Exiting application !";
+        qDebug() << "Error : connection with the 'desktopWeaDTApp' sqlite database FAILLED ! Exiting application !";
         qDebug() << RESET;
 
         //
@@ -23,7 +23,7 @@ SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
 
     //
     qDebug() << BOLD_GREEN;
-    qDebug() << "Connection with the '' sqlite database SUCCESSFULLY ESTABLISHED ! Running application !";
+    qDebug() << "Connection with the 'desktopWeaDTApp' sqlite database SUCCESSFULLY ESTABLISHED ! Running application !";
     qDebug() << RESET;
 
     //
