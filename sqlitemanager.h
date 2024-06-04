@@ -15,7 +15,7 @@ class SQLITEManager : public QObject
 public:
 
     //
-    SQLITEManager(const QString sqlitePath, const QString testQuery);
+    SQLITEManager(const QString sqlitePath);
 
     //
     QString getCountryCodeFromTimezone(QString timezone);
@@ -28,7 +28,7 @@ private:
     QSqlDatabase sqliteDBConnector;
 
     //
-    void testDB(const QString testQuery);
+    void testDB();
 };
 
 #endif // SQLITEMANAGER_H

@@ -1,7 +1,7 @@
 #include "sqlitemanager.h"
 
 //
-SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
+SQLITEManager::SQLITEManager(QString sqlitePath)
 {
     //
     QSqlDatabase sqliteDBConnector = QSqlDatabase::addDatabase("QSQLITE");
@@ -27,27 +27,36 @@ SQLITEManager::SQLITEManager(QString sqlitePath, QString testQuery)
     qDebug() << RESET;
 
     //
-    this->testDB(testQuery);
+    this->testDB();
 }
 
 //
 QString SQLITEManager::getCountryCodeFromTimezone(QString timezone)
 {
     //
-
+    QSqlQuery query;
 
     //
-    return "za";
+    query.prepare("SELECT country_code FROM timezones WHERE name='" + timezone + "';");
+
+    //
+    query.exec();
+
+    //
+    query.first();
+
+    //
+    return query.value("country_code").toString();
 }
 
 //
-void SQLITEManager::testDB(QString testQuery)
+void SQLITEManager::testDB()
 {
     //
     QSqlQuery query;
 
     //
-    query.prepare(testQuery);
+    query.prepare("SELECT name FROM sqlite_schema WHERE type='table';");
 
     //
     if(!query.exec())
