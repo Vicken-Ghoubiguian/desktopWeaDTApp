@@ -46,6 +46,13 @@ QString SQLITEManager::getCountryCodeFromTimezone(QString timezone)
     query.first();
 
     //
+    if(!query.isValid())
+    {
+        //
+        return "za";
+    }
+
+    //
     return query.value("country_code").toString();
 }
 
